@@ -12,11 +12,13 @@
 [ZAP](zap.md)
 
 ## OWASP
-[TOP 10](Top10/)
+[TOP 10](https://github.com/OWASP/Top10/tree/master/2021/docs)
 
-[ASVS](/ASVS/)
+[ASVS](https://github.com/OWASP/ASVS/tree/master/5.0/en)
 
-[WSTG](/MSTG/)
+[WSTG](https://github.com/OWASP/wstg/tree/master/document/4-Web_Application_Security_Testing)
+
+[CheatSheets](https://github.com/OWASP/CheatSheetSeries/tree/master/cheatsheets)
 
 ## Github
 
