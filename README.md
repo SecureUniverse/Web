@@ -1,8 +1,9 @@
 # Web Security
 
 ## Conecpts
-- [Information Gathering](information-gathering.md)
-- [Shell Upload](shell-upload.md)
+[Information Gathering](information-gathering.md)
+
+[Shell Upload](shell-upload.md)
 
 ## OWASP
 [TOP 10](https://github.com/OWASP/Top10/tree/master/2021/docs)
