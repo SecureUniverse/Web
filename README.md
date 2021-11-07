@@ -5,6 +5,10 @@
 
 [Shell Upload](shell-upload.md)
 
+[Code Execution](code-execution.md)
+
+[File Inclusion](file-inclusion.md)
+
 ## OWASP
 [TOP 10](https://github.com/OWASP/Top10/tree/master/2021/docs)
 
