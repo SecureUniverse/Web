@@ -8,7 +8,7 @@
   - /var/log/auth.log
   - /var/log/apache2/access.log  
 - Example
-  - [DVWA](/Web/BuggyApp/DVWA/file-inclusion.md)  
+  - [DVWA](../BuggyApp/DVWA/file-inclusion.md)  
 
 ### Remote
 
