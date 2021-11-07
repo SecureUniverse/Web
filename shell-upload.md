@@ -14,7 +14,7 @@
 - Analyze the uploaded file itself, recreate it and rename it (with library)
 
 ## Safe Code
-
+```
 // Is it an image?
 if( ( strtolower( $uploaded_ext ) == 'jpg' || strtolower( $uploaded_ext ) == 'jpeg' || strtolower( $uploaded_ext ) == 'png' ) &&
 		( $uploaded_size < 100000 ) &&
@@ -51,3 +51,4 @@ if( ( strtolower( $uploaded_ext ) == 'jpg' || strtolower( $uploaded_ext ) == 'jp
 		$html .= '<pre>Your image was not uploaded. We can only accept JPEG or PNG images.</pre>';
 	}
 }	
+```
