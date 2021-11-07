@@ -1,15 +1,8 @@
 # Web Security
 
-## Tools
-[Acunetix](acunetix.md)
-
-[BeEF](beef.md)
-
-[Burp Suite](burp.md)
-
-[SQLMAP](sqlmap.md)
-
-[ZAP](zap.md)
+## Conecpts
+- [Information Gathering](information-gathering.md)
+- [Shell Upload](shell-upload.md)
 
 ## OWASP
 [TOP 10](https://github.com/OWASP/Top10/tree/master/2021/docs)
