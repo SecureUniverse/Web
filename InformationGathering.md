@@ -16,7 +16,7 @@
    - [knock](https://github.com/guelfoweb/knock)
 7. Unlisted files, directories
    - [dirb](/Tools/dirb.md)
-   - These files are sensitive
+   - Sensitive files
      - phpinfo.php
      - robots.txt 
 
