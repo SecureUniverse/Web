@@ -1,13 +1,13 @@
 # Web Security
 
-## Conecpts
-[Information Gathering](information-gathering.md)
+## Attacks
+[Information Gathering](Attacks/information-gathering.md)
 
-[Shell Upload](shell-upload.md)
+[Shell Upload](Attacks/shell-upload.md)
 
-[Code Execution](code-execution.md)
+[Code Execution](Attacks/code-execution.md)
 
-[File Inclusion](file-inclusion.md)
+[File Inclusion](Attacks/file-inclusion.md)
 
 ## OWASP
 [TOP 10](https://github.com/OWASP/Top10/tree/master/2021/docs)
