@@ -7,6 +7,8 @@
   - /proc/self/environ
   - /var/log/auth.log
   - /var/log/apache2/access.log  
+- Example
+  - [DVWA](BuggyApp/DVWA/file-inclusion.md)  
 
 ### Remote
 
