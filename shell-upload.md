@@ -14,7 +14,7 @@
 - Analyze the uploaded file itself, recreate it and rename it (with library)
 
 ## Safe Code
-```
+```php
 // Is it an image?
 if( ( strtolower( $uploaded_ext ) == 'jpg' || strtolower( $uploaded_ext ) == 'jpeg' || strtolower( $uploaded_ext ) == 'png' ) &&
 		( $uploaded_size < 100000 ) &&
