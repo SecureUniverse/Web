@@ -11,6 +11,10 @@
 
 [SQL Injection](Attacks/sql-injection.md)
 
+[XSS](Attacks/xss.md)
+
+[CSRF](Attacks/csrf.md)
+
 ## OWASP
 [TOP 10](https://github.com/OWASP/Top10/tree/master/2021/docs)
 
