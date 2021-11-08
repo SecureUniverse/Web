@@ -1,6 +1,11 @@
 # SQLMAP
 
-## Login Page
+## Commands
+- ```sqlmap --help```
+- ```sqlmap -u [target url]```
+
+## Example
+- Login page
 ```
 sqlmap -u https://admin-portal.htb/login.php --form --dbs
 sqlmap -u https://admin-portal.htb/login.php --dbms=mysql --data "email=test@test.nz&password=pass"
