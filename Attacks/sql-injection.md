@@ -30,6 +30,8 @@
     - ```/*``` & ```//``` & ```#``` & ```%23```
     - Sometimes you might need to add ';' before the comment
       - ```anD 1=1//``` => ```anD 1=1;//```
+## Tool
+[SQLMAP](../Tools/sqlmap.md)
 
 ## Mitigation
 - Secure Code for login in PHP
