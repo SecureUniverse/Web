@@ -1,5 +1,7 @@
 # Brute Force
 
 ## Tool
-- [Hydra](../Tools/hydra.md)
-- [Crunch](../Tools/crunch.md)
+- Brute force tool 
+  - [Hydra](../Tools/hydra.md)
+- Wordlist generator
+  - [Crunch](../Tools/crunch.md)
