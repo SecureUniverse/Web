@@ -15,6 +15,8 @@
 
 [CSRF](Attacks/csrf.md)
 
+[Brute Force](Attacks/brute-force.md)
+
 ## OWASP
 [TOP 10](https://github.com/OWASP/Top10/tree/master/2021/docs)
 
