@@ -21,7 +21,7 @@
      - Browser addon (Wappalyzer)  
 
 4. **DNS records**
-   - Online sites: [Robtex](https://www.robtex.com/)
+   - [Robtex](https://www.robtex.com/)
    - nslookup
    - [dig](/Tools/dig.md)
    - Reverse IP lookup zone
