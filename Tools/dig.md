@@ -1,4 +1,4 @@
-# Dig
+# dig
 
 ## Commands
 - ```dig +short ns megacorpone.com```
