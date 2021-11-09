@@ -29,5 +29,5 @@
   - ```sql_dump -vector [VECTOR] -host [HOST] -lpath [location to store data] [DB Name] [username] [password]```
 - Other functions
   - ```whoami``` 
-  - ``` shell_sh [command]
-  - ```shell_sh -v [vector] [command]
+  - ``` shell_sh [command]```
+  - ```shell_sh -v [vector] [command]```
