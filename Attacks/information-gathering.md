@@ -18,7 +18,7 @@
    - Web application
      - Review page source
      - Check cookies
-     - Browser addonw (Wappalyzer)  
+     - Browser addon (Wappalyzer)  
 
 4. **DNS records**
    - [Robtex](https://www.robtex.com/)
