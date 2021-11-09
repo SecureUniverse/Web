@@ -53,11 +53,8 @@
 7. **Unlisted files, directories**
    - [dirb](/Tools/dirb.md)
    - Crawling with [Burp](/Tools/burp.md)
-   - Online sites
-     - [PentestTools](https://pentest-tools.com/) 
-   - Sensitive files
-     - phpinfo.php
-     - robots.txt 
+   - Online sites: [PentestTools](https://pentest-tools.com/) 
+   - Sensitive files: ```phpinfo.php``` & ```robots.txt```
 
 ## Search engine
 - [Google](https://www.google.com/)
