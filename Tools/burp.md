@@ -1,5 +1,14 @@
 # Burp
 
+## Crawling
+- Send a request to Intruder
+- Change *"position"*
+  -  ```GET /$$ HTTP/1.1```
+- Payload type: Bruteforcer
+- Set *"min"* & *"max"*
+- Add ```.txt``` for "*Suffix*"
+- Filter with ```200``` Status code
+
 ## Sequencer
 - Use to detect the ability to predict randomize (for example, Cookie)
 1. Send a *"request"* (with cookie) to repeater
