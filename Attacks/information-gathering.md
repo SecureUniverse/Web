@@ -13,10 +13,8 @@
      - nc
        - ```nc www.nooranet.com 80```
        - ```GET / HTTP/1.1```
-     - Burp Suite
-       - Check Response
-     - Nmap
-       - ```nmap -p 80,443 -sV abc.ed```  
+     - Check Response with Burp
+     - ```nmap -p 80,443 -sV abc.ed```  
    - Web application
      - Review page source
      - Check cookies
