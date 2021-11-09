@@ -1,4 +1,4 @@
 # XSS
 
-## Tool
+## Exploitation Tool
 [BeEF](../Tools/beef.md)
