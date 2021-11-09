@@ -4,10 +4,10 @@
 1. **IP address**
    - ```ping``` command
 
-2. Domain name info
+2. **Domain name info**
    - [whois](https://whois.domaintools.com/)
 
-3. Technologies used
+3. **Technologies used**
    - Web server
      - [Netcraft](https://sitereport.netcraft.com/?url=)
      - nc
@@ -22,7 +22,7 @@
      - Check cookies
      - Browser addonw (Wappalyzer)  
 
-4. DNS records
+4. **DNS records**
    - [Robtex](https://www.robtex.com/)
    - nslookup
    - dig
@@ -32,7 +32,7 @@
    - Reverse IP lookup zone
      - ```for ip in $(seq 1 254); do host 193.8.139.$ip; done | grep -v "not found"``` 
 
-5. Other websites on the same server
+5. **Other websites on the same server**
    - [Robtex](https://www.robtex.com/)
    - [Bing](https://www.bing.com/)
      - ```ip:[target ip]```
@@ -41,7 +41,7 @@
    - [FomainTools](https://reverseip.domaintools.com/)  
      - accept IP range 
 
-6. Subdomains
+6. **Subdomains**
    - [knock](https://github.com/guelfoweb/knock)
    - [Google](https://www.google.com/)
      - ```site:nasa.gov -site:www.nasa.gov```
@@ -50,7 +50,7 @@
    - Dictionary attack 
      -  ```for ip in $(cat subdomain.txt); do host $ip.megacorpone.com; done | grep -v "not found"```
 
-7. Unlisted files, directories
+7. **Unlisted files, directories**
    - [dirb](/Tools/dirb.md)
    - Sensitive files
      - phpinfo.php
