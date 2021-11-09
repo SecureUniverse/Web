@@ -1,7 +1,7 @@
 # Infrmation Gathering
 
 ## Steps
-1. IP address
+1. **IP address**
    - ```ping``` command
 
 2. Domain name info
