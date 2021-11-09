@@ -33,21 +33,4 @@
 
 ## Github
 
-|---|---|
-| [wpscan](https://github.com/wpscanteam/wpscan)  | [gobuster](https://github.com/OJ/gobuster)  |  [whatweb](https://github.com/urbanadventurer/WhatWeb)  |
-| [wfuzz](https://github.com/xmendez/wfuzz)  | [nikto](https://github.com/sullo/nikto)  | bbb |
-
-| First Header   |
-| ------------- | ------------- |
-| [wpscan](https://github.com/wpscanteam/wpscan)  | [wfuzz](https://github.com/xmendez/wfuzz)  |
-| [gobuster](https://github.com/OJ/gobuster)  | [nikto](https://github.com/sullo/nikto)  |
-
-[wpscan](https://github.com/wpscanteam/wpscan)
-
-[wfuzz](https://github.com/xmendez/wfuzz)
-
-[gobuster](https://github.com/OJ/gobuster)
-
-[nikto](https://github.com/sullo/nikto)
-
-[whatweb](https://github.com/urbanadventurer/WhatWeb)
+[wpscan](https://github.com/wpscanteam/wpscan), [wfuzz](https://github.com/xmendez/wfuzz), [gobuster](https://github.com/OJ/gobuster), [nikto](https://github.com/sullo/nikto), [whatweb](https://github.com/urbanadventurer/WhatWeb)
