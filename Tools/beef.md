@@ -13,3 +13,13 @@
 ## Usage
 - 127.0.0.1:3000/hook.js
 - 192.168.8.106:3000/demos/basic.html
+
+## Useful commands
+- Steal Credentials
+  - Social Engineering -> Pretty Theft
+- Screenshot
+  - Browser -> Spyder Eye     
+- Redirect 
+  - Browser -> Hooked Domain -> Redirect Browser  
+- Shell Upload with update
+  - Social Engineering -> Fake Notification Bar(Firefox)
