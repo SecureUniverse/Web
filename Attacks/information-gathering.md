@@ -8,7 +8,19 @@
    - [whois](https://whois.domaintools.com/)
 
 3. Technologies used
-   - [Netcraft](https://sitereport.netcraft.com/?url=)
+   - Web server
+     - [Netcraft](https://sitereport.netcraft.com/?url=)
+     - nc
+       - ```nc www.nooranet.com 80```
+       - ```GET / HTTP/1.1```
+     - Burp Suite
+       - Check Response
+     - Nmap
+       - ```nmap -p 80,443 -sV abc.ed```  
+   - Web application
+     - Review page source
+     - Check cookies
+     - Browser addonw (Wappalyzer)  
 
 4. DNS records
    - [Robtex](https://www.robtex.com/)
@@ -22,7 +34,12 @@
 
 5. Other websites on the same server
    - [Robtex](https://www.robtex.com/)
-   - Use ```ip:[target ip]``` in *"bing.com"*
+   - [Bing](https://www.bing.com/)
+     - ```ip:[target ip]```
+   - [YouGetSignal](https://www.yougetsignal.com/)
+     - Reverse IP Domain Check
+   - [FomainTools](https://reverseip.domaintools.com/)  
+     - accept IP range 
 
 6. Subdomains
    - [knock](https://github.com/guelfoweb/knock)
@@ -44,9 +61,9 @@
   - s
 
 - [Shodan](https://www.shodan.io/)
-  - ```net: “193.8.138.0/24” port:443```
-  - ```net: “193.8.138.0/24” apache```
-  - ```net: “193.8.138.0/24” iis```
+  - ```net:"193.8.138.0/24" port:443```
+  - ```net:"193.8.138.0/24" apache```
+  - ```net:"193.8.138.0/24" iis```
 
 - [Censys](https://censys.io/)
   - ```location.country.code:US and tags:scada```
