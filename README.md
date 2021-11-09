@@ -39,8 +39,8 @@
 
 | First Header  | Second Header |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| [wpscan](https://github.com/wpscanteam/wpscan)  | [wfuzz](https://github.com/xmendez/wfuzz)  |
+| [gobuster](https://github.com/OJ/gobuster)  | [nikto](https://github.com/sullo/nikto)  |
 
 [wpscan](https://github.com/wpscanteam/wpscan)
 
