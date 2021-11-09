@@ -32,21 +32,15 @@
 
 5. **Other websites on the same server**
    - [Robtex](https://www.robtex.com/)
-   - [Bing](https://www.bing.com/)
-     - ```ip:[target ip]```
-   - [YouGetSignal](https://www.yougetsignal.com/)
-     - Reverse IP Domain Check
-   - [FomainTools](https://reverseip.domaintools.com/)  
-     - accept IP range 
+   - [Bing](https://www.bing.com/): ```ip:[target ip]```
+   - [YouGetSignal](https://www.yougetsignal.com/): Reverse IP Domain Check
+   - [FomainTools](https://reverseip.domaintools.com/): accept IP range 
 
 6. **Subdomains**
    - [knock](https://github.com/guelfoweb/knock)
-   - [Google](https://www.google.com/)
-     - ```site:nasa.gov -site:www.nasa.gov```
-   - [Netcraft](https://searchdns.netcraft.com/)
-     - site ends with *".mci.ir"* 
-   - Dictionary attack 
-     -  ```for ip in $(cat subdomain.txt); do host $ip.megacorpone.com; done | grep -v "not found"```
+   - [Google](https://www.google.com/): ```site:nasa.gov -site:www.nasa.gov```
+   - [Netcraft](https://searchdns.netcraft.com/): site ends with *".mci.ir"* 
+   - Dictionary attack: ```for ip in $(cat subdomain.txt); do host $ip.megacorpone.com; done | grep -v "not found"```
 
 7. **Unlisted files, directories**
    - [dirb](/Tools/dirb.md)
