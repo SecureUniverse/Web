@@ -1,21 +1,7 @@
 # Web Security
 
 ## Attacks
-[Information Gathering](Attacks/information-gathering.md)
-
-[Shell Upload](Attacks/shell-upload.md)
-
-[Code Execution](Attacks/code-execution.md)
-
-[File Inclusion](Attacks/file-inclusion.md)
-
-[SQL Injection](Attacks/sql-injection.md)
-
-[XSS](Attacks/xss.md)
-
-[CSRF](Attacks/csrf.md)
-
-[Brute Force](Attacks/brute-force.md)
+[Information Gathering](Attacks/information-gathering.md) - [Shell Upload](Attacks/shell-upload.md) - [Code Execution](Attacks/code-execution.md) - [File Inclusion](Attacks/file-inclusion.md) - [SQL Injection](Attacks/sql-injection.md) - [XSS](Attacks/xss.md) - [CSRF](Attacks/csrf.md) - [Brute Force](Attacks/brute-force.md)
 
 ## Proxy
 [Burp Suite](Tools/burp.md) - [ZAP](Tools/zap.md)
