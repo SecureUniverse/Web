@@ -23,10 +23,7 @@
 4. **DNS records**
    - [Robtex](https://www.robtex.com/)
    - nslookup
-   - dig
-     - ```dig +short ns megacorpone.com```
-     - ```dig +short mx megacorpone.com```
-     - ```dig +short a megacorpone.com```
+   - [dig](/Tools/dig.md)
    - Reverse IP lookup zone
      - ```for ip in $(seq 1 254); do host 193.8.139.$ip; done | grep -v "not found"``` 
 
