@@ -17,6 +17,11 @@
 
 [Brute Force](Attacks/brute-force.md)
 
+## Proxy
+[Burp Suite](Tools/burp.md)
+
+[ZAP](Tools/zap.md)
+
 ## OWASP
 [TOP 10](https://github.com/OWASP/Top10/tree/master/2021/docs)
 
