@@ -30,3 +30,4 @@
 
 ## Upload of Malicious Files
 - محتوای فایل هم علاوه بر extension باید چک شود که از طریق signature می باشد
+- مانند قرار دادن کد PHP در بخش comment عکس
