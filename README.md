@@ -13,6 +13,7 @@
 - [Brute Force](Attacks/brute-force.md)
 - [API](Attacks/api.md)
 - [Business Logic](Attacks/business-logic.md)
+- [Cryptography](Attacks/cryptography.md)
 
 ## OWASP
 [TOP 10](https://github.com/OWASP/Top10/tree/master/2021/docs) - [ASVS](https://github.com/OWASP/ASVS/tree/master/5.0/en) - [WSTG](https://github.com/OWASP/wstg/tree/master/document/4-Web_Application_Security_Testing) - [CheatSheets](https://github.com/OWASP/CheatSheetSeries/tree/master/cheatsheets)
