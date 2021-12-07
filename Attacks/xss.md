@@ -5,6 +5,7 @@
 - Stored
 - DOM Based
   - هیچ اطلاعاتی به سمت سرور ارسال نمی شود که این در Burp قابل بررسی است
+  
   - Javascript functions types
     - source
       - ```?name=alireza => document.url()```
