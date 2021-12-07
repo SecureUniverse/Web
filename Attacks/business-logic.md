@@ -18,7 +18,7 @@
 - محدود نمودن فراخوانی تابع موجودی بیش از 5 بار برای جلوگیری از Dictionary Attack و Brute Force
 
 ## The circumvention of Workflows
-- Check `Edit Profile` to bypass security role of `Create Profile`
+- ممکن است در بخش Edit Profile بتوانیم مکانزم های امنیتی ای که در بخش Create Profile وجود دارد را دور بزنیم
 
 ## Defenses Against Application Mis-Use
 - Block user for specific time after using illegal characters
