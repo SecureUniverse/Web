@@ -12,10 +12,10 @@
 
 ## Process Timing
 - حذف محصول از سبد خرید پس از زمان مشخص
-- صدور خطا دستابیس پس از ماندن طولانی مدت در یکی از مراحل فرآیند خرید
+- صدور خطا دیتابیس پس از ماندن طولانی مدت در یکی از مراحل فرآیند خرید
 
 ## Number of times a Function can be Used limits
-- Restrict calling `موجودی` more than 5 times in banking app to prevent Brute Force & Dictionary Attack
+- محدود نمودن فراخوانی تابع موجودی بیش از 5 بار برای جلوگیری از Dictionary Attack و Brute Force
 
 ## The circumvention of Workflows
 - Check `Edit Profile` to bypass security role of `Create Profile`
