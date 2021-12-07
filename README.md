@@ -17,6 +17,9 @@
 - [Cryptography](Attacks/cryptography.md)
 - [Client Side](Attacls/client-side.md)
 - [HTML Injection](Attacks/html-injection.md)
+- [Session Management](Attacks/session-management.md)
+- [Broken Authentication](Attacks/broken-authentication.md)
+- [Broken Access Control](Attacks/broken-access-control.md)
 
 ## Tools
 - Proxy
