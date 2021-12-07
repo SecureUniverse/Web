@@ -32,6 +32,7 @@
   - [Weevely](/Tools/weevely.md)
 - Other
   - [Crunch](/Tools/crunch.md) 
+  - [SSLyze](/Tools/sslyze.md)
   - [Dirb](/Tools/dirb.md) 
   - [Maltego](/Tools/maltego.md)
 
