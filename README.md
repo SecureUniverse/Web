@@ -10,6 +10,7 @@
 - [SQL Injection](Attacks/sql-injection.md)
 - [XSS](Attacks/xss.md)
 - [CSRF](Attacks/csrf.md)
+- [XXE](Attacks/xxe.md)
 - [Brute Force](Attacks/brute-force.md)
 - [API](Attacks/api.md)
 - [Business Logic](Attacks/business-logic.md)
