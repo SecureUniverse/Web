@@ -14,6 +14,7 @@
 - [API](Attacks/api.md)
 - [Business Logic](Attacks/business-logic.md)
 - [Cryptography](Attacks/cryptography.md)
+- [Client Side](Attacls/client-side.md)
 
 ## Tools
 - Proxy
