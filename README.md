@@ -15,6 +15,7 @@
 - [Business Logic](Attacks/business-logic.md)
 - [Cryptography](Attacks/cryptography.md)
 - [Client Side](Attacls/client-side.md)
+- [HTML Injection](Attacks/html-injection.md)
 
 ## Tools
 - Proxy
