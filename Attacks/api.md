@@ -10,3 +10,6 @@
 
 ## Recon
   - ```site:ir inurl:?wsdl```
+
+## Buggy Framework
+- WebGoat
