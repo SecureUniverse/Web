@@ -14,14 +14,15 @@
 - Scanner
   - [Acunetix](/Tools/acunetix.md) 
   - [wpscan](https://github.com/wpscanteam/wpscan)
-- Other
+- Exploit
   - [BeEF](/Tools/beef.md) 
-  - [Crunch](/Tools/crunch.md) 
-  - [Dirb](/Tools/dirb.md) 
-  - [Hydra](/Tools/hydra.md)
-  - [Maltego](/Tools/maltego.md)
+  - [Hydra](/Tools/hydra.md) 
   - [SQLMap](/Tools/sqlmap.md)
   - [Weevely](/Tools/weevely.md)
+- Other
+  - [Crunch](/Tools/crunch.md) 
+  - [Dirb](/Tools/dirb.md) 
+  - [Maltego](/Tools/maltego.md)
 
 ## Github
 - [wfuzz](https://github.com/xmendez/wfuzz) - [gobuster](https://github.com/OJ/gobuster) - [nikto](https://github.com/sullo/nikto) - [whatweb](https://github.com/urbanadventurer/WhatWeb)
