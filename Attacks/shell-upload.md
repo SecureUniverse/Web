@@ -3,10 +3,15 @@
 ## Tool
 - [Weevely](/Tools/weevely.md)
 
-## Bypass
-- Intercept request and modify headers
-  - ```Content-Type: image/jpeg```
-  - ```Content-Disposition: filename="shell.php.jpg"```
+## Attacks
+- Content type
+  - ```application/octet-stream``` => ```Content-Type: image/jpeg```
+- Black list
+  - Apache web server is case sensetive
+    - ```.php``` => ```.PhP```  
+  - modify htaccess (SEC542 - 7) 
+- Double Extension
+  - *wp.php* => *wp.php.gif* 
 
 ## Mitigation
 - Never allow users to upload executable
