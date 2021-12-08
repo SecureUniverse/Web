@@ -12,4 +12,4 @@
 
 
 ## File Access Attach
-- [File Inclusion](Attacks/file-inclusion.md)
+- [File Inclusion](file-inclusion.md)
