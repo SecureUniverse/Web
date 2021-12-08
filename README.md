@@ -21,6 +21,7 @@
 - [Session Management](Attacks/session-management.md)
 - [Broken Authentication](Attacks/broken-authentication.md)
 - [Broken Access Control](Attacks/broken-access-control.md)
+- [LDAP Injection](ldap-injection.md)
 
 ## Tools
 - Proxy
