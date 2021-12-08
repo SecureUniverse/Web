@@ -8,6 +8,7 @@
 - [Code Execution](Attacks/code-execution.md)
 - [File Inclusion](Attacks/file-inclusion.md)
 - [SQL Injection](Attacks/sql-injection.md)
+- [Command Injection](Attacks/command-injection.md)
 - [XSS](Attacks/xss.md)
 - [CSRF](Attacks/csrf.md)
 - [XXE](Attacks/xxe.md)
