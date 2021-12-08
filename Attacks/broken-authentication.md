@@ -14,3 +14,4 @@
 - Bypass with Tor
 
 ## Weaker Authentication in Alternative Channel
+- Check Mobile app functionality to bypass Web app
