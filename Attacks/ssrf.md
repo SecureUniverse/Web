@@ -38,5 +38,5 @@
 - http://134.209.1.150:8000 (nc is running on attacker machine))
 - file:///etc/passwd
 - http://localhost
-- http://169.254.169.254/metadata/v1
+- http://169.254.169.254/metadata/v1 (AWS)
 - Copy and paste *Burp Collaborator* address
