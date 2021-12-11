@@ -1,7 +1,7 @@
-# Shell Upload
+# File Upload
 
-## Tool
-- [Weevely](/Tools/weevely.md)
+## Concept
+- با تغییر نام فایل آپلود شده می توانیم حملات XSS و RCE انجام دهیم
 
 ## Attacks
 - Content type
@@ -18,7 +18,6 @@
 - Check the file type & extension
 - Analyze the uploaded file itself, recreate it and rename it (with library)
 
-
 ## Find Uploaded Shell
 - Burp
   - Intruder > Payloads > Add Payload Processing > test
@@ -27,3 +26,6 @@
   - Set *Target URL* & *File name* & *File Extension*
   - Set user/pass to auto matically login to site
   - Options > Advanced Options > Double Extension
+
+## Tool
+- [Weevely](/Tools/weevely.md)
