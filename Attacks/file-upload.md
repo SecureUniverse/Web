@@ -3,7 +3,7 @@
 ## Concept
 - با تغییر نام فایل آپلود شده در Burp می توانیم حملات XSS و RCE انجام دهیم
 
-## Attacks
+## Bypass
 - Content type
   - ```application/octet-stream``` => ```Content-Type: image/jpeg```
 - Black list
