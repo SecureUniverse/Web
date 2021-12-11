@@ -5,6 +5,7 @@
 
 ## Attacks
 - [Shell Upload](Attacks/shell-upload.md)
+- [Open Rediect](Attacks/open-redirect.md)
 - [Code Execution](Attacks/code-execution.md)
 - [File Inclusion](Attacks/file-inclusion.md)
 - [SQL Injection](Attacks/sql-injection.md)
