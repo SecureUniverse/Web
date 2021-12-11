@@ -54,6 +54,7 @@
   - site:gm.com -s -"search-careers" -www intitle:admin
 
 - [Shodan](https://www.shodan.io/)
+  - ```hostname:gm.com```
   - ```net:"193.8.138.0/24" port:443```
   - ```net:"193.8.138.0/24" apache```
   - ```net:"193.8.138.0/24" iis```
