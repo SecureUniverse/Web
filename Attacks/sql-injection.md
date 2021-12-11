@@ -4,7 +4,7 @@
 - MySQL
   - Error Based
     - Union Query
-      - Discovery: ```'``` & ```"``` & ```\``` & ```\```` & ```/````
+      - Discovery: ```'``` & ```"``` & ```\``` & ```)``` & tilda
       - Exploitation (SEC542 - 5)
     - Double Query (SEC542 - 5)
   - Blind 
