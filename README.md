@@ -45,6 +45,7 @@
   - [Sublist3r](https://github.com/aboul3la/Sublist3r)
   - [Amass](https://github.com/OWASP/Amass)
   - [Aquatone](https://github.com/michenriksen/aquatone)
+  - [HTTPProbe](https://github.com/tomnomnom/httprobe)
 - Other
   - [wfuzz](https://github.com/xmendez/wfuzz)
   - [gobuster](https://github.com/OJ/gobuster)
