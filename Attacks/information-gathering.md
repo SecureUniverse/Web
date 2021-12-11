@@ -63,6 +63,9 @@
 - [Censys](https://censys.io/)
   - ```location.country.code:US and tags:scada```
 
-## Framework
-[Maltego](/Tools/maltego.md)
+## Maltego
+- Add entity
+  - Palette -> Infrastructure -> Domain
+- Discover
+  - Right-click on the entity and select a transform
 
