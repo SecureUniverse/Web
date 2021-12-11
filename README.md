@@ -4,7 +4,7 @@
 - [Information Gathering](Attacks/information-gathering.md)
 
 ## Attacks
-- [Shell Upload](Attacks/shell-upload.md)
+- [File Upload](Attacks/file-upload.md)
 - [IDOR](Attacks/idor.md)
 - [SSRF](Attacks/ssrf.md)
 - [Open Rediect](Attacks/open-redirect.md)
