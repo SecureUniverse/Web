@@ -23,4 +23,7 @@
 - Burp
   - Intruder > Payloads > Add Payload Processing > test
   - Suffix: ```.php```
-- [Dirbuster](/Tools/dirbuster.md)
+- Dirbuster
+  - Set *Target URL* & *File name* & *File Extension*
+  - Set user/pass to auto matically login to site
+  - Options > Advanced Options > Double Extension
