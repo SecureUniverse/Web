@@ -9,7 +9,3 @@
   - site:ir inurl:editform.aspx
   - site:ir inurl:editprofile.php
 - Login => Visit & save all pages => Logout => Check access to all pages
-
-
-## File Access Attach
-- [File Inclusion](file-inclusion.md)
