@@ -2,7 +2,6 @@
 
 ## Recon
 - [Information Gathering](Attacks/information-gathering.md)
-- [Recon](Attacks/recon.md)
 
 ## Attacks
 - [File Upload](Attacks/file-upload.md)
