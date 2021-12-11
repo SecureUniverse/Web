@@ -8,7 +8,6 @@
 - [IDOR](Attacks/idor.md)
 - [SSRF](Attacks/ssrf.md)
 - [Open Rediect](Attacks/open-redirect.md)
-- [Code Execution](Attacks/code-execution.md)
 - [Local File Inclusion](Attacks/lfi.md)
 - [SQL Injection](Attacks/sql-injection.md)
 - [RCE](Attacks/rce.md)
