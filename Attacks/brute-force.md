@@ -1,5 +1,7 @@
 # Brute Force
 
+## Burp Intruder is the Best tool !
+
 ## Crunch (Wordlist generator)
 - Syntax
   - ```crunch [min]  [max] [characters] -t [pattern] -o [filename]```
@@ -13,8 +15,6 @@
 
 - Example 
   - ```cmd hydra 10.20.14.212 -l admin -P /root/test.txt http-post-form "/mutillidae/index.php?page=login.php:username=^USER^&password=^PASS^&login-php-submit-button=Login:F=Not Logged In"```
-
-## Burp is the Best tool !
 
 ## Wordlists
 - ftp://ftp.openwall.com/pub/wordlists/
