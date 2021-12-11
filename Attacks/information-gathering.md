@@ -1,4 +1,4 @@
-# Infrmation Gathering
+# Information Gathering
 
 ## Steps
 1. **IP address**
