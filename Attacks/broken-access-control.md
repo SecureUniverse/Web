@@ -1,8 +1,5 @@
 # Broken Access Control
 
-## IDOR - Insecure Direct Object Reference
-- ```?customer_number=132354```
-
 ## Missing Functional Level Access Control
 - http://example.com/app/getappinfo => http://example.com/app/admin_getappinfo
 - GHDB
