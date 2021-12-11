@@ -26,6 +26,7 @@
    - [dig](/Tools/dig.md)
    - Reverse IP lookup zone
      - ```for ip in $(seq 1 254); do host 193.8.139.$ip; done | grep -v "not found"``` 
+   - [CRT.sh](https://crt.sh/)
 
 5. **Other websites on the same server**
    - [Robtex](https://www.robtex.com/)
@@ -47,7 +48,10 @@
 
 ## Search engine
 - [Google](https://www.google.com/)
-  - s
+  - site:gm.com -s -"search-careers" -www ext:jsp
+  - site:gm.com -s -"search-careers" -www inurl:admin
+  - site:gm.com -s -"search-careers" -www inurl:login 
+  - site:gm.com -s -"search-careers" -www intitle:admin
 
 - [Shodan](https://www.shodan.io/)
   - ```net:"193.8.138.0/24" port:443```
