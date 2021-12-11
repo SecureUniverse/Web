@@ -2,6 +2,7 @@
 
 ## Recon
 - [Information Gathering](Attacks/information-gathering.md)
+- [Recon](Attacks/recon.md)
 
 ## Attacks
 - [File Upload](Attacks/file-upload.md)
@@ -33,7 +34,7 @@
 - Exploit
   - [BeEF](/Tools/beef.md) - [SQLMap](/Tools/sqlmap.md) - [Weevely](/Tools/weevely.md)
 - Other
-  - [SSLyze](/Tools/sslyze.md) - [Dirb](/Tools/dirb.md) - [Maltego](/Tools/maltego.md)
+  - [SSLyze](/Tools/sslyze.md) - [Dirb](/Tools/dirb.md)
 
 ## OWASP
 - [TOP 10](https://github.com/OWASP/Top10/tree/master/2021/docs) - [ASVS](https://github.com/OWASP/ASVS/tree/master/5.0/en) - [WSTG](https://github.com/OWASP/wstg/tree/master/document/4-Web_Application_Security_Testing) - [CheatSheets](https://github.com/OWASP/CheatSheetSeries/tree/master/cheatsheets)
