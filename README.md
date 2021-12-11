@@ -31,6 +31,8 @@
   - [Burp](/Tools/burp.md) - [ZAP](/Tools/zap.md) - [SoapUI](/Tools/soapui.md)
 - Scanner
   - [Acunetix](/Tools/acunetix.md) - [wpscan](https://github.com/wpscanteam/wpscan)
+- Fuzzer
+  - [FFUF](/Tools/ffuf.md)
 - Exploit
   - [BeEF](/Tools/beef.md) - [Hydra](/Tools/hydra.md) - [SQLMap](/Tools/sqlmap.md) - [Weevely](/Tools/weevely.md)
 - Other
