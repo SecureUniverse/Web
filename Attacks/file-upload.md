@@ -1,7 +1,7 @@
 # File Upload
 
 ## Concept
-- با تغییر نام فایل آپلود شده می توانیم حملات XSS و RCE انجام دهیم
+- با تغییر نام فایل آپلود شده در Burp می توانیم حملات XSS و RCE انجام دهیم
 
 ## Attacks
 - Content type
