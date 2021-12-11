@@ -4,11 +4,11 @@
 - MySQL
   - Error Based
     - Union Query
-      - Discovery: ```'``` & ```"``` & ```\``` 
+      - Discovery: ```'``` & ```"``` & ```\``` & ```\```` & ```/````
       - Exploitation (SEC542 - 5)
     - Double Query (SEC542 - 5)
-  - Blind Based 
-    - Boolean (SEC542 - 5)
+  - Blind 
+    - Boolean (SEC542 - 5) 
     - Time Based (SEC542 - 5)
 
 
