@@ -2,9 +2,11 @@
 
 ## Local
 - Concept
+  - ی
   - از این آسیب پذیری  برای خواند فایل های تنظیمات روی hosting machine استفاده می شود
   - همچنین فایل های تصادفی مانند /etc/passwd
   - همچنین ممکن است منجر به Information Disclosure شود
+
 
 - Exploit
   - ```example1.php?page=intro.php../../../../../etc/passwd```
