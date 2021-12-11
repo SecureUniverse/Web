@@ -41,9 +41,9 @@
 
 ## Github
 - NahamSec recommendation
-  - [FFUF](https://github.com/ffuf/ffuf) => NahamSec
-  - [Sublist3r](https://github.com/aboul3la/Sublist3r) = > NahamSec 
-  - [Amass](https://github.com/OWASP/Amass) => NahamSec
+  - [FFUF](https://github.com/ffuf/ffuf)
+  - [Sublist3r](https://github.com/aboul3la/Sublist3r)
+  - [Amass](https://github.com/OWASP/Amass)
   - [Aquatone](https://github.com/michenriksen/aquatone)
 - Other
   - [wfuzz](https://github.com/xmendez/wfuzz)
