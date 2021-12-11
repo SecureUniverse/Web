@@ -1,7 +1,7 @@
 # XXE
 
 ## Concept
-```<!Entity nooranet SYSTEM “file:///etc/passwd”>```
+```<!Entity nooranet SYSTEM "file:///etc/passwd">```
 
 ## Discovery
 - Find ```xml``` in error of these payloads
