@@ -11,7 +11,7 @@
 - [Code Execution](Attacks/code-execution.md)
 - [Local File Inclusion](Attacks/lfi.md)
 - [SQL Injection](Attacks/sql-injection.md)
-- [Remote Command Execution](Attacks/rce.md)
+- [RCE](Attacks/rce.md)
 - [XSS](Attacks/xss.md)
 - [CSRF](Attacks/csrf.md)
 - [XXE](Attacks/xxe.md)
