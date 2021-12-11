@@ -41,6 +41,7 @@
 
 ## Github
 - [FFUF](https://github.com/ffuf/ffuf) => NahamSec
+- [Sublist3r](https://github.com/aboul3la/Sublist3r) = > NahamSec 
 - [wfuzz](https://github.com/xmendez/wfuzz)
 - [gobuster](https://github.com/OJ/gobuster)
 - [nikto](https://github.com/sullo/nikto)
