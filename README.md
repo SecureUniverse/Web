@@ -6,6 +6,7 @@
 ## Attacks
 - [Shell Upload](Attacks/shell-upload.md)
 - [IDOR](Attacks/idor.md)
+- [SSRF](ssrf.md)
 - [Open Rediect](Attacks/open-redirect.md)
 - [Code Execution](Attacks/code-execution.md)
 - [Local File Inclusion](Attacks/lfi.md)
