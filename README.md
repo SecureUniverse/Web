@@ -45,8 +45,12 @@
   - [Amass](https://github.com/OWASP/Amass)
   - [Aquatone](https://github.com/michenriksen/aquatone)
   - [HTTPProbe](https://github.com/tomnomnom/httprobe)
-- Other
+  - [MassDNS](https://github.com/blechschmidt/massdns)
   - [wfuzz](https://github.com/xmendez/wfuzz)
   - [gobuster](https://github.com/OJ/gobuster)
+  - [DirSearch](https://github.com/maurosoria/dirsearch)
+  - [JSParser](https://github.com/nahamsec/JSParser)
+  - [LinkFinder](https://github.com/GerbenJavado/LinkFinder)
   - [nikto](https://github.com/sullo/nikto)
   - [whatweb](https://github.com/urbanadventurer/WhatWeb)
+  
