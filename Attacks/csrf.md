@@ -1,11 +1,10 @@
 # CSRF
 
 ## Concepts
+- اگر سرور بررسی نکند که آیا درخواست واقعا از کاربر آمده است یا نه، این حمله رخ می دهد
 - از این آسیب پذیری برای تغییر رمز عبور ، ایمیل و ... قربانی استفاده می شود
 - باید به دنبال CSRF Token درون Req و Resp  بگردیم و آن را حذف کنیم تا ببینیم کار می کند یا نه
-- Requests are not validated at the server side
-- Server does not check if the user generatd the request
-- Requests can be forged and sent to users to make them do things they don't intend to do such as changing their password
+- همچنین می توانیم CSRF Token یک کاربر دیگر را استاده مجدد کنیم تا نتیجه را بررسی کنیم
 
 ## Discovery
 - Save *"change password"* request with Burp, in an HTML file, then open the HTML file in a new browser. Check if the password changed or not.
