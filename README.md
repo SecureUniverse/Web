@@ -8,7 +8,7 @@
 - [IDOR](Attacks/idor.md)
 - [Open Rediect](Attacks/open-redirect.md)
 - [Code Execution](Attacks/code-execution.md)
-- [File Inclusion](Attacks/file-inclusion.md)
+- [Local File Inclusion](Attacks/lfi.md)
 - [SQL Injection](Attacks/sql-injection.md)
 - [Command Injection](Attacks/command-injection.md)
 - [XSS](Attacks/xss.md)
