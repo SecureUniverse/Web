@@ -9,7 +9,6 @@
 ## Attacks
 - [File Upload](Attacks/file-upload.md)
 - [IDOR](Attacks/idor.md)
-- [SSRF](Attacks/ssrf.md)
 - [Open Rediect](Attacks/open-redirect.md)
 - [Local File Inclusion](Attacks/lfi.md)
 - [SQL Injection](Attacks/sql-injection.md)
