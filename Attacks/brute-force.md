@@ -1,7 +1,22 @@
 # Brute Force
 
 ## Burp
-- Intruder
+- Send request to Intruder
+- Decode user/pass in the request
+  - Right-click on the value and select "Convert selection > Base64 > Base64-decode"
+  - The credentials passed to the login prompt are shown => test:123
+- Replace the credentials with a parameter to be substituted => creds
+- Click on the Add$ Button on the right side
+- Navigate to the Payloads tab and load the 100-common-passwords.txt list
+- In the Payload Processing section click on the "Add" button
+- Select "Add Prefix" & Set the Prefix to "admin:"
+  - Now "admin:" would be appended to each password from the list 
+- Add another Payload Processing option to encode the payload to base64 
+  - Select the Encode Rule as Base64-encode 
+- Click on the "Start Attack" button 
+- Check the Status codes of the requests and check the payload for the request with a different status code => 301
+- Double click on the request entry
+- Select the credentials in the Authorization header field and send them to the Decoder tab
 
 ## ZAProxy
 - Click on "Manual Explore", enter the target IP address in the Input field and click on "Launch Browser" => A browser session will be started with ZAP HUD
