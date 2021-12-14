@@ -4,6 +4,7 @@
 - [Information Gathering](Attacks/information-gathering.md)
 - [Search Engine](Attacks/search-engine.md)
 - [Maltego](Attacks/maltego.md)
+- [Scan](Attacks/scan.md)
 
 ## Attacks
 - [File Upload](Attacks/file-upload.md)
