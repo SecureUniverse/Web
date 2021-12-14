@@ -46,7 +46,8 @@
        - ```GET /$$ HTTP/1.0``` 
        - Wordlist: /usr/share/wordlists/dirb/common.txt
      - Crawling
-       - a 
+       - Dashboard => Live passive crawl from proxy
+       - Navigate to "Target" tab and the sitemap of the web application will be displayed
    - Dirbuster
      - Enter the target URL and select “Auto Switch” in Work Method
      - Click on the “Browse” button to select the wordlist => /usr/share/wordlists/dirb/common.txt
@@ -85,9 +86,7 @@
      - Start the attack by clicking the play button
      - The scan will start and the found directories and files will be added to the sitemap
      - After the scan completes, expand the directories. Check the files in data folder
-   - d   
    - [dirb](/Tools/dirb.md)
-   - Crawling with [Burp](/Tools/burp.md)
    - [PentestTools](https://pentest-tools.com/) 
    - Sensitive files: ```phpinfo.php``` & ```robots.txt```
 
