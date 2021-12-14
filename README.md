@@ -2,6 +2,8 @@
 
 ## Recon
 - [Information Gathering](Attacks/information-gathering.md)
+- [Search Engine](Attacks/search-engine.md)
+- [Maltego](Attacks/maltego.md)
 
 ## Attacks
 - [File Upload](Attacks/file-upload.md)
