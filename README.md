@@ -38,7 +38,7 @@
 - A07 - Identification and Authentication Failures
 - A08 - Software and Data Integrity Failures
 - A09 - Security Logging and Monitoring Failures
-- A10 - Server-Side Request Forgery
+- [A10 - Server-Side Request Forgery](Attacks/ssrf.md)
 
 ## Tools
 - Proxy
