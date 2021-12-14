@@ -11,7 +11,6 @@
 - [IDOR](Attacks/idor.md)
 - [Open Rediect](Attacks/open-redirect.md)
 - [Local File Inclusion](Attacks/lfi.md)
-- [SQL Injection](Attacks/sql-injection.md)
 - [RCE](Attacks/rce.md)
 - [XSS](Attacks/xss.md)
 - [CSRF](Attacks/csrf.md)
@@ -21,16 +20,17 @@
 - [Business Logic](Attacks/business-logic.md)
 - [Cryptography](Attacks/cryptography.md)
 - [Client Side](Attacls/client-side.md)
-- [HTML Injection](Attacks/html-injection.md)
 - [Session Management](Attacks/session-management.md)
 - [Broken Authentication](Attacks/broken-authentication.md)
 - [Broken Access Control](Attacks/broken-access-control.md)
-- [LDAP Injection](Attacks/ldap-injection.md)
 
 ## OWASP
 - A01 - Broken Access Control
 - A02 - Cryptographic Failures 
 - A03 - Injection
+  - [HTML Injection](Attacks/html-injection.md)
+  - [LDAP Injection](Attacks/ldap-injection.md)
+  - [SQL Injection](Attacks/sql-injection.md)
 - A04 - Insecure Design 
 - A05 - Security Misconfiguration 
 - [A06 - Vulnerable and Outdated Components](Attacks/vulnerable-components.md)
