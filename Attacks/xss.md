@@ -8,11 +8,8 @@
 - Stored
 - DOM Based
   - Nothing send to server (check with Burp), instead use both Javascript functions types simultaneously:
-    - source
-      - ```?name=alireza => document.url()```
-    - sink 
-      -  ```getElementById()```
-      - ```document.write()```
+    - source: ```?name=alireza => document.url()```
+    - sink: ```getElementById()``` & ```document.write()```
 
 ## Exploitation
 - Session Hijacking (SEC542-4)
