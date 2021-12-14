@@ -6,7 +6,7 @@
 - ```nikto -h http://192.230.148.3/index.php?page=arbitrary-file-inclusion.php -Tuning 5 -Display V```
   - All the requests with the response code 200 are listed in the verbose mode
   - The highlighted line indicates that the LFI vulnerability was detected
-- ```nikto -h http://192.230.148.3/index.php?page=arbitrary-file-inclusion.php -Tuning 5 -o nikto.html -Format htm``
+- ```nikto -h http://192.230.148.3/index.php?page=arbitrary-file-inclusion.php -Tuning 5 -o nikto.html -Format htm```
   - Saving the scan result as an HTML file
 
 ## ZAProxy
