@@ -34,7 +34,7 @@
 - A03 - Injection
 - A04 - Insecure Design 
 - A05 - Security Misconfiguration 
-- A06 - Vulnerable and Outdated Components 
+- [A06 - Vulnerable and Outdated Components](Attacks/vulnerable-components.md)
 - A07 - Identification and Authentication Failures
 - A08 - Software and Data Integrity Failures
 - A09 - Security Logging and Monitoring Failures
