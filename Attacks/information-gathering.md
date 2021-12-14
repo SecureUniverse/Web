@@ -65,9 +65,26 @@
      - ```gobuster dir -u http://192.156.207.3/data -w /usr/share/wordlists/dirb/common.txt -b 403,404 -x .php,.xml,.txt -r``` 
        - start scanning from the ```/data``` directory
    - Opendoor
-     - 
+     - ```opendoor --host http://192.156.207.3 -s directories -w /usr/share/wordlists/dirb/common.txt```
+       - ```--host```: define the target URL
+       - ```-s```: specify the scan mode which in this case is directories 
+       - ```-w```: define the wordlist with its full path 
+       - The blue links represent the redirection (status code 302) whereas the green represents
+     - ```opendoor --host http://192.156.207.3 -s directories -w /usr/share/wordlists/dirb/common.txt -e php,txt.xml```
+       - ```-e```: specify the file extensions which has to be checked on the target
+     - ```opendoor --host http://192.156.207.3 -s directories -w /usr/share/wordlists/dirb/common.txt -e php,txt.xml --prefix data/```
+       - ```--prefix```: append the target URL with the specified directory
+     - ```opendoor --host http://192.156.207.3 -s directories -w /usr/share/wordlists/dirb/common.txt -e php,txt.xml --prefix data/ --reports html```
+       - ```--reports```: reporting format to be used (json, html, text)
    - ZAProxy
-     - 
+     - Click on "Manual Explore", enter the target IP address in the Input field and click on "Launch Browser"
+     - Click on "Continue to your target", Upon visiting the website, the website will be added to the Site map
+     - Right Click on the target site under Sites, navigate to Attack and click on "Forced Browse Directory"
+     - A new tab will appear on the bottom window: "Forced Browse"
+     - Click on the List dropdown and select the common.txt wordlist
+     - Start the attack by clicking the play button
+     - The scan will start and the found directories and files will be added to the sitemap
+     - After the scan completes, expand the directories. Check the files in data folder
    - d   
    - [dirb](/Tools/dirb.md)
    - Crawling with [Burp](/Tools/burp.md)
