@@ -41,6 +41,34 @@
    - Dictionary attack: ```for ip in $(cat subdomain.txt); do host $ip.megacorpone.com; done | grep -v "not found"```
 
 7. **Unlisted files, directories**
+   - Burp
+     - Intruder
+       - ```GET /$$ HTTP/1.0``` 
+       - Wordlist: /usr/share/wordlists/dirb/common.txt
+     - Crawling
+       - a 
+   - Dirbuster
+     - Enter the target URL and select “Auto Switch” in Work Method
+     - Click on the “Browse” button to select the wordlist => /usr/share/wordlists/dirb/common.txt
+     - Click on the Start button
+     - Click on the "Results - List Views" button in order to see the results
+     - Click on the "Results - Tree View" to get the results in tree format
+     - Increase the threads up to 30 to get results faster. Enter 30 in the "Current number of threads" & Click on the Change button
+     - Click on the dropdown button to get the contents inside the data directory
+   - Gobuster
+     - ```gobuster dir -u http://192.156.207.3 -w /usr/share/wordlists/dirb/common.txt```
+     - ```gobuster dir -u http://192.156.207.3 -w /usr/share/wordlists/dirb/common.txt -b 403,404```
+       - ```-b```: specify the status codes which has to be ignored
+     - ```gobuster dir -u http://192.156.207.3 -w /usr/share/wordlists/dirb/common.txt -b 403,404 -x .php,.xml,.txt -r```
+       - ```-x```: find the files which have the specified extensions
+       - ```-r```: follow any redirects or 302 status code pages 
+     - ```gobuster dir -u http://192.156.207.3/data -w /usr/share/wordlists/dirb/common.txt -b 403,404 -x .php,.xml,.txt -r``` 
+       - start scanning from the ```/data``` directory
+   - Opendoor
+     - 
+   - ZAProxy
+     - 
+   - d   
    - [dirb](/Tools/dirb.md)
    - Crawling with [Burp](/Tools/burp.md)
    - [PentestTools](https://pentest-tools.com/) 
