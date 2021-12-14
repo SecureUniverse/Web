@@ -48,6 +48,7 @@
      - Crawling
        - Dashboard => Live passive crawl from proxy
        - Navigate to "Target" tab and the sitemap of the web application will be displayed
+   
    - Dirbuster
      - Enter the target URL and select “Auto Switch” in Work Method
      - Click on the “Browse” button to select the wordlist => /usr/share/wordlists/dirb/common.txt
@@ -56,6 +57,7 @@
      - Click on the "Results - Tree View" to get the results in tree format
      - Increase the threads up to 30 to get results faster. Enter 30 in the "Current number of threads" & Click on the Change button
      - Click on the dropdown button to get the contents inside the data directory
+   
    - Gobuster
      - ```gobuster dir -u http://192.156.207.3 -w /usr/share/wordlists/dirb/common.txt```
      - ```gobuster dir -u http://192.156.207.3 -w /usr/share/wordlists/dirb/common.txt -b 403,404```
@@ -65,6 +67,7 @@
        - ```-r```: follow any redirects or 302 status code pages 
      - ```gobuster dir -u http://192.156.207.3/data -w /usr/share/wordlists/dirb/common.txt -b 403,404 -x .php,.xml,.txt -r``` 
        - start scanning from the ```/data``` directory
+   
    - Opendoor
      - ```opendoor --host http://192.156.207.3 -s directories -w /usr/share/wordlists/dirb/common.txt```
        - ```--host```: define the target URL
@@ -77,6 +80,7 @@
        - ```--prefix```: append the target URL with the specified directory
      - ```opendoor --host http://192.156.207.3 -s directories -w /usr/share/wordlists/dirb/common.txt -e php,txt.xml --prefix data/ --reports html```
        - ```--reports```: reporting format to be used (json, html, text)
+   
    - ZAProxy
      - Click on "Manual Explore", enter the target IP address in the Input field and click on "Launch Browser"
      - Click on "Continue to your target", Upon visiting the website, the website will be added to the Site map
