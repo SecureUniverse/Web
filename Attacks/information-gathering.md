@@ -1,13 +1,12 @@
 # Information Gathering
 
-## Steps
-1. **IP address**
+## IP address
    - ```ping``` command
 
-2. **Domain name info**
+## Domain name info
    - [whois](https://whois.domaintools.com/)
 
-3. **Technologies used**
+## Technologies used
    - Web server
      - [Netcraft](https://sitereport.netcraft.com/?url=)
      - nc
@@ -20,7 +19,7 @@
      - Check cookies
      - Browser addon (Wappalyzer)  
 
-4. **DNS records**
+## DNS records
    - [Robtex](https://www.robtex.com/)
    - nslookup
    - [dig](/Tools/dig.md)
@@ -28,19 +27,19 @@
      - ```for ip in $(seq 1 254); do host 193.8.139.$ip; done | grep -v "not found"``` 
    - [CRT.sh](https://crt.sh/)
 
-5. **Other websites on the same server**
+## Other websites on the same server
    - [Robtex](https://www.robtex.com/)
    - [Bing](https://www.bing.com/): ```ip:[target ip]```
    - [YouGetSignal](https://www.yougetsignal.com/): Reverse IP Domain Check
    - [FomainTools](https://reverseip.domaintools.com/): accept IP range 
 
-6. **Subdomains**
+## Subdomains
    - [knock](https://github.com/guelfoweb/knock)
    - [Google](https://www.google.com/): ```site:nasa.gov -site:www.nasa.gov```
    - [Netcraft](https://searchdns.netcraft.com/): site ends with *".mci.ir"* 
    - Dictionary attack: ```for ip in $(cat subdomain.txt); do host $ip.megacorpone.com; done | grep -v "not found"```
 
-7. **Unlisted files, directories**
+## Unlisted files, directories
    - Burp
      - Intruder
        - ```GET /$$ HTTP/1.0``` 
