@@ -1,4 +1,4 @@
-# IDOR
+# Insecure Direct Object Reference
 
 ## Concept
 - می توان به اطلاعات کاربران دیگر مانند اطلاعات شناسایی، تلفن، آدرس و ... دسترسی پیدا کرد
