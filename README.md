@@ -6,26 +6,9 @@
 - [Maltego](Attacks/maltego.md)
 - [Scan](Attacks/scan.md)
 
-## OWASP
-- [A01 - Broken Access Control](Attacks/broken-access-control.md)
-- [A02 - Cryptographic Failures](Attacks/cryptography.md)
-- A03 - Injection
-  - [XSS](Attacks/xss.md)  
-  - [SQL Injection](Attacks/sql-injection.md)
-  - [HTML Injection](Attacks/html-injection.md)
-  - [LDAP Injection](Attacks/ldap-injection.md)
-- A04 - Insecure Design 
-- A05 - Security Misconfiguration 
-  - [XXE](Attacks/xxe.md)
-- [A06 - Vulnerable and Outdated Components](Attacks/vulnerable-components.md)
-- A07 - Identification and Authentication Failures
-  - [Broken Authentication](Attacks/broken-authentication.md) 
-- A08 - Software and Data Integrity Failures
-- A09 - Security Logging and Monitoring Failures
-- [A10 - Server-Side Request Forgery](Attacks/ssrf.md)
-
-## Other Attacks
+## Attacks
 - [File Upload](Attacks/file-upload.md)
+- [SSRF](Attacks/ssrf.md)
 - [IDOR](Attacks/idor.md)
 - [Open Rediect](Attacks/open-redirect.md)
 - [Local File Inclusion](Attacks/lfi.md)
@@ -36,7 +19,16 @@
 - [Business Logic](Attacks/business-logic.md)
 - [Client Side](Attacls/client-side.md)
 - [Session Management](Attacks/session-management.md)
-- 
+- [Broken Authentication](Attacks/broken-authentication.md) 
+- [Vulnerable Components](Attacks/vulnerable-components.md)
+- [XXE](Attacks/xxe.md)
+- [XSS](Attacks/xss.md)  
+- [SQL Injection](Attacks/sql-injection.md)
+- [HTML Injection](Attacks/html-injection.md)
+- [LDAP Injection](Attacks/ldap-injection.md)
+- [Broken Access Control](Attacks/broken-access-control.md)
+- [Cryptography](Attacks/cryptography.md)
+
 ## Tools
 - Proxy
   - [Burp](/Tools/burp.md) - [ZAP](/Tools/zap.md) - [SoapUI](/Tools/soapui.md)
