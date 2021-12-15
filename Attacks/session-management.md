@@ -1,15 +1,16 @@
 # Session Management
 
 ## Bypassing Session Management Schema
-- Modify SessionId value in Cookie
-- SessionId types
+- Modify SessionId value in Cookie, SessionId types are:
   - Cleartext
+    - admin=1  
   - Hash
     - Fixed length 
       - MD5: 32 Bytes
       - SHA: 128 Bytes
   - Encode
     - Base64: ```=``` & ```.``` & ```\```
+    - ```echo bG9nZ2VkaW49VHJ1ZTthZG1pbj1GYWxzZQ== | base64 -d```
   - Encryption 
     - Variable length 
 
