@@ -4,7 +4,7 @@
 - از این آسیب پذیری  برای خواند فایل های تنظیمات روی hosting machine استفاده می شود
 - همچنین فایل های تصادفی مانند /etc/passwd
 - همچنین ممکن است منجر به Information Disclosure شود
-- این حمله Directory Traversal هم می شود
+- در LFI می توانیم فایل اجرا کنیم ولی در Directory Traversal فقط می توانیم فایل های روی سرور را بخوانیم
 
 ## Bypass
 - Encoding
