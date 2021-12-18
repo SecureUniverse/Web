@@ -5,6 +5,11 @@
 - UTF8: 8 bits (256 characters)
 - UTF16/32: 16 bits 
 
+## Hash
+- MD5 : 32 Byte
+- SHA1 : 64 Byte
+- SHA2 : 128 Byte
+
 ## Symbols
 - ```or```     =>    ||
 - ```and```    =>    &&
@@ -23,6 +28,20 @@
 - Gzip : geometrical shape
 - Hex : ```0~9 a~F```
 
+# Symetrical Encryptio
+- **Stream Cipher**
+  - RC4
+  - A5 (Telecommunication)
+  - E0 (Bluetooth)
+- **Block Cipher**
+  - Modes
+    - ECB (ECB Block Shuffling)
+    - CBC (CBC Bit Flipping & Oracle Padding)
+    - CRT
+  - Example
+    - DES
+    - 3DES
+    - AES 
 
 
 ## Attacks (SSLv3 - TLS1.1)
