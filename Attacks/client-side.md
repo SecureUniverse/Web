@@ -32,9 +32,8 @@ return true;
     - In source code (javascript), search for error text of uploading wrong file 
   - Add malicious file type to whitelist of this function
 
-## Tools
-- Burp 
-  - Proxy > Options > Match and Replace > Add
+## Burp
+- Proxy > Options > Match and Replace > Add
   - Type: Response Body
   - Match: ```<!--```
   - Replace: 
