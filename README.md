@@ -18,7 +18,7 @@
 - [Brute Force](Attacks/brute-force.md)
 - [API](Attacks/api.md)
 - [Business Logic](Attacks/business-logic.md)
-- [Client Side](Attacls/client-side.md)
+- [Client Side](Attacks/client-side.md)
 - [Session Management](Attacks/session-management.md)
 - [Missing Functional Level Access Control](Attacks/broken-authentication.md) 
 - [Vulnerable Components](Attacks/vulnerable-components.md)
