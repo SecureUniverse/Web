@@ -17,12 +17,12 @@
   - ```site:ir inurl:asmx?```
 
 ## SoapUI
-- Rest
+- **Rest**
   - Define URI
   - Select Method
   - Paste JSON in left-bottom part
 
-- Soap
+- **Soap**
   - File > New Soap Project
     - Project Name : shaparak
     - Initial WSDL : https://sep.shaparak.ir/payments/referencepayment.asmx?WSDL
@@ -30,11 +30,11 @@
     - Replace ? with parameters
   - Check Response in right window
 
-- Load Test
+- **Load Test**
   - Right-click on Request & select "Add to TestCase"
   - Right-click on TestCase & select "New LoadTest"
 
-- Integrate with Burp
+- **Integrate with Burp**
   - SOAPUI > File > Preferences > Proxy Setting: ```Manual```
 
 ## Buggy Framework
