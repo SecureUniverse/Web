@@ -35,7 +35,7 @@
 
 ## Tools
 - Proxy
-  - [Burp](/Tools/burp.md) - [ZAP](/Tools/zap.md) - [SoapUI](/Tools/soapui.md)
+  - [Burp](/Tools/burp.md) - [ZAP](/Tools/zap.md)
 - Scanner
   - [Acunetix](/Tools/acunetix.md) - [wpscan](https://github.com/wpscanteam/wpscan)
 - Exploit
