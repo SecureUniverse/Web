@@ -1,5 +1,8 @@
 # API
 
+## Concept
+- ```Content-type: application/json```
+
 ## Web service attack types
 - SQL Injection
 - Command Injection
@@ -9,25 +12,30 @@
 - XML Bombing
 
 ## Recon
+  - ```site:ir intitle:wsdl | wadl```
   - ```site:ir inurl:?wsdl```
+  - ```site:ir inurl:asmx?```
 
 ## SoapUI
-- Rest API
+- Rest
   - Define URI
   - Select Method
   - Paste JSON in left-bottom part
 
-- Load Test
-  - Right-click on Request & select "Add to TestCase"
-  - Right-click on TestCase & select "New LoadTest"
-
-- penetration steps
+- Soap
   - File > New Soap Project
     - Project Name : shaparak
     - Initial WSDL : https://sep.shaparak.ir/payments/referencepayment.asmx?WSDL
   - Open functions and check Requests
     - Replace ? with parameters
   - Check Response in right window
+
+- Load Test
+  - Right-click on Request & select "Add to TestCase"
+  - Right-click on TestCase & select "New LoadTest"
+
+- Integrate with Burp
+  - SOAPUI > File > Preferences > Proxy Setting: ```Manual```
 
 ## Buggy Framework
 - WebGoat
