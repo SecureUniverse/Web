@@ -28,7 +28,7 @@
 - Gzip : geometrical shape
 - Hex : ```0~9 a~F```
 
-# Symetrical Encryptio
+# Symetrical Encryption
 - **Stream Cipher**
   - RC4
   - A5 (Telecommunication)
