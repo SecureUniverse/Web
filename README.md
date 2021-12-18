@@ -41,7 +41,7 @@
 - Exploit
   - [BeEF](/Tools/beef.md) - [Weevely](/Tools/weevely.md)
 - Other
-  - [SSLyze](/Tools/sslyze.md) - [Dirb](/Tools/dirb.md)
+  - [Dirb](/Tools/dirb.md)
 
 ## Github
 - [FFUF](https://github.com/ffuf/ffuf)
