@@ -91,4 +91,6 @@
    - After the scan completes, expand the directories. Check the files in data folder
  - [dirb](/Tools/dirb.md)
  - [PentestTools](https://pentest-tools.com/) 
- - Sensitive files: ```phpinfo.php``` & ```robots.txt```
+ - Interesting files: 
+   - */phpinfo.php*
+   - */robots.txt*
