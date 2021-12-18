@@ -30,9 +30,10 @@
 
 # Symetrical Encryption
 - **Stream Cipher**
-  - RC4
-  - A5 (Telecommunication)
-  - E0 (Bluetooth)
+  - Example 
+    - RC4
+    - A5 (Telecommunication)
+    - E0 (Bluetooth)
 - **Block Cipher**
   - Modes
     - ECB (ECB Block Shuffling)
