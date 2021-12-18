@@ -30,6 +30,9 @@
 - [Broken Access Control](Attacks/broken-access-control.md)
 - [Cryptography](Attacks/cryptography.md)
 
+## Fix
+- [Apache](Fix/apache.md)
+
 ## Tools
 - Proxy
   - [Burp](/Tools/burp.md) - [ZAP](/Tools/zap.md) - [SoapUI](/Tools/soapui.md)
