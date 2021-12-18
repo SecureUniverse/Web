@@ -22,12 +22,12 @@
   - Right-click on TestCase & select "New LoadTest"
 
 - penetration steps
-  1. File > New Soap Project
-     - Project Name : shaparak
-     - Initial WSDL : https://sep.shaparak.ir/payments/referencepayment.asmx?WSDL
-  2. Open functions and check Requests
-     - Replace ? with parameters
-  3. Check Response in right window
+  - File > New Soap Project
+    - Project Name : shaparak
+    - Initial WSDL : https://sep.shaparak.ir/payments/referencepayment.asmx?WSDL
+  - Open functions and check Requests
+    - Replace ? with parameters
+  - Check Response in right window
 
 ## Buggy Framework
 - WebGoat
