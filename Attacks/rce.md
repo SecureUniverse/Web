@@ -16,6 +16,7 @@
 - ```uname```
 - ```id```
 - ```hostname```
+- ```ps aux```
 
 # Code Execution
 
