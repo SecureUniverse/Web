@@ -20,14 +20,14 @@
 - [Business Logic](Attacks/business-logic.md)
 - [Client Side](Attacls/client-side.md)
 - [Session Management](Attacks/session-management.md)
-- [Broken Authentication](Attacks/broken-authentication.md) 
+- [Missing Functional Level Access Control](Attacks/broken-authentication.md) 
 - [Vulnerable Components](Attacks/vulnerable-components.md)
 - [XXE](Attacks/xxe.md)
 - [XSS](Attacks/xss.md)  
 - [SQL Injection](Attacks/sql-injection.md)
 - [HTML Injection](Attacks/html-injection.md)
 - [LDAP Injection](Attacks/ldap-injection.md)
-- [Broken Access Control](Attacks/broken-access-control.md)
+- [Broken Access Control](Attacks/missing-functional-level-access-control.md)
 - [Cryptography](Attacks/cryptography.md)
 
 ## Fix
