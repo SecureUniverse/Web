@@ -21,7 +21,7 @@
 ## Exploitation
 - Login Bypass
   - Username : ```administrator'--``` , ```admin'#``` 
-  - password: ```1' or 1=1#```
+  - password : ```1' or 1=1#```
 
 - Where cluase : ```' OR 1=1--``` 
 
