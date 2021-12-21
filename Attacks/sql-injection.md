@@ -29,7 +29,7 @@
     - MYSQL & MSSQL : ```' UNION SELECT @@version, NULL#```  (must use Burp because of #)
   -  
 
-
+```
 a'or'1'='1
 a' or '1'='1
 a' or '1'='1'--
