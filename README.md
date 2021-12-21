@@ -11,7 +11,7 @@
 - [SSRF](Attacks/ssrf.md)
 - [IDOR](Attacks/idor.md)
 - [Open Rediect](Attacks/open-redirect.md)
-- [LFI](Attacks/lfi.md)
+- [LFI (Directory Traversal)](Attacks/lfi.md)
 - [RFI](Attacks/rfi.md)
 - [RCE](Attacks/rce.md)
 - [CSRF](Attacks/csrf.md)
