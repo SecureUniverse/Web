@@ -31,7 +31,7 @@
 - [Cryptography](Attacks/cryptography.md)
 
 ## Fix
-- [Apache](Fix/Fix Misconfigured Apache Webserver.pdf)
+- [Apache](Fix/Apache.pdf)
 
 ## Tools
 - [Burp](/Tools/burp.md)
