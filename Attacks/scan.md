@@ -29,3 +29,22 @@
   - Right click on the Site (http://192.210.141.3), navigate to Attack and select "Active Scan"
   - A dialog box will appear, select the "bee" user and click on "Start Scan" button
   - After the scan completes, click on the "Alerts" tab
+
+# Acunetix
+- [Reference](https://www.programmersought.com/article/84304947552/)
+- Install
+```
+acunetix_13.0.200217097_x64_.sh
+```
+- Run
+Insert "https://kali:3443/" in browser
+
+- Config
+```
+sudo cp -rf wvsc /home/acunetix/.acunetix/v_200217097/scanner/
+sudo cp -rf license_info.json /home/acunetix/.acunetix/data/license/
+```
+- Change Email & Password
+```
+./change_credentials.sh
+```
