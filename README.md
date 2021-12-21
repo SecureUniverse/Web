@@ -34,12 +34,10 @@
 - [Apache](Fix/apache.md)
 
 ## Tools
-- Proxy
-  - [Burp](/Tools/burp.md) - [ZAP](/Tools/zap.md)
-- Exploit
-  - [Weevely](/Tools/weevely.md)
-- Other
-  - [Dirb](/Tools/dirb.md)
+- [Burp](/Tools/burp.md)
+- [ZAP](/Tools/zap.md)
+- [Weevely](/Tools/weevely.md)
+- [Dirb](/Tools/dirb.md)
 
 ## Github
 - [FFUF](https://github.com/ffuf/ffuf)
