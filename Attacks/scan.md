@@ -41,3 +41,5 @@
   - ```sudo cp -rf license_info.json /home/acunetix/.acunetix/data/license/```
 - Change Email & Password
   - ```./change_credentials.sh```
+
+# [wpscan](https://github.com/wpscanteam/wpscan)
