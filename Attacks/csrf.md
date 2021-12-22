@@ -10,7 +10,8 @@
 - در خواست تغییر ایمیل را به Burp می بریم، اگر CSRF Token نداشت که هچ
 - اگر CSRF Token داشت از روش های زیر استفاده می کنیم
   - متد را از POST به GET تغییر می دهیم
-  -  
+  - نام پارامتر و مقدار CSRF Token را از درخوایت حذف می کنیم
+  - 
 
 ## Burp
 - Right-click on the Request > Engagement tools > Generate SCRF PoC
