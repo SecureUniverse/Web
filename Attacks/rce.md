@@ -19,9 +19,7 @@
 ```
 
 ## Blind OS Command Injection
-```
-x||ping+-c+10+127.0.0.1||
-```
+- time delays : ```x||ping+-c+10+127.0.0.1||```
 
 # Code Execution
 
