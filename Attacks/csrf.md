@@ -23,9 +23,7 @@
 ``` 
  - اگر مقدار referrer در سمت سرور چک شود و مقدار خالی reffere را هم قبول کند
      - با اضافه کردن HTML زیر به PoC (همان بخش body)، هدر Referrer را حذف می کنیم تا این بررسی بای پاس شود
-```HTML
-<meta name="referrer" content="no-referrer">
-```
+```<meta name="referrer" content="no-referrer">```
  - اگر مقدار referrer در سمت سرور چک شود و درون referrer به دنبال pattern ای از آدرس سایت بگردد 
    - ابتدا PoC را ایجاد کرده و سپس تغییر زیر را در بخش ابتدایی PoC اعمال می کنیم
 ```Javascript
