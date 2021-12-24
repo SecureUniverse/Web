@@ -27,7 +27,15 @@
 <meta name="referrer" content="no-referrer">
 ```
  - اگر مقدار referrer در سمت سرور چک شود و درون referrer به دنبال pattern ای از آدرس سایت بگردد 
- 
+   - ابتدا PoC را ایجاد کرده و سپس تغییر زیر را در بخش ابتدایی PoC اعمال می کنیم
+```Javascript
+<script>history.pushState('', '', '/?ac0a1f761f007f86c0d41ced006e00da.web-security-academy.net')</script>
+```
+   - سپس بخش زیر را به Head درخواست خود اضافه می کنیم
+```HTML
+Referrer-Policy: unsafe-url
+```
+
 ## Burp
 - Right-click on the Request > Engagement tools > Generate SCRF PoC
 - Options > Choose "incluse auto-submit script"
