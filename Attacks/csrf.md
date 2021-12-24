@@ -18,7 +18,7 @@
   - اگر CSRF Token به مقداری از Cookie، به جز SessionId وصل شده باشد (مثلا csrfkey)
     - بررسی می کنیم که در کجای سایت می شود این cookie را در مرورگر قربانی تزریق کرد (مثلا در بخش search ممکن است این cookie به همراه مقداری که جستجو کردیم، به cookie اضافه گردد) که نتیجه این کار یک URL می شود
     - سپس PoC را ایجاد کرده و تگ img را به جای script اجرای خودکار قرار می دهیم تا URL ای که برای تزریق Cookie ایجاد کرده بودیم هم اعمال گردد
-```
+```HTML
 <img src="https://acbd1fe91ead2563c00539b4008c0086.web-security-academy.net/?search=test%0d%0aSet-Cookie:%20csrfKey=TwzBeSszkg9tjKT3u97crNV7yWLVl0iU" onerror="document.forms[0].submit()">
 ``` 
  - س
