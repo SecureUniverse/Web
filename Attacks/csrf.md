@@ -36,15 +36,12 @@
 Referrer-Policy: unsafe-url
 ```
 
-## Burp
+## Burp PoC
 - Right-click on the Request > Engagement tools > Generate SCRF PoC
 - Options > Choose "incluse auto-submit script"
 - Click on Regenerate
 - Click on Copy HTML
 - Upload the HTML file in an exploit server and deliver it to victim
-
-## Discovery
-- Save *"change password"* request with Burp, in an HTML file, then open the HTML file in a new browser. Check if the password changed or not.
 
 ## Mitigation
 - Generate an unpredictable token that can not be used (large value, random, unique)
