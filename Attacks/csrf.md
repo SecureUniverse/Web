@@ -28,9 +28,7 @@
  - اگر مقدار referrer در سمت سرور چک شود، دو حالت زیر را خواهیم داشت
    - مقدار خالی reffere را هم قبول کند
      - با اضافه کردن HTML زیر به PoC، هدر Referrer را حذف کنیم تا این بررسی بای پاس شود
-```HTML
-<meta name="referrer" content="no-referrer"> 
-```
+     - ```<meta name="referrer" content="no-referrer">```
    - درون referrer به دنبال pattern ای از آدرس سایت بگردد 
  
 ## Burp
