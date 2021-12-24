@@ -1,5 +1,9 @@
 # Remote Command Execution
 
+## Concept
+- باید از Burp برای بررسی Response استفاده کنیم
+
+
 ## Payloads
 ```
 ;ls
