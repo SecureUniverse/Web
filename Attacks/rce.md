@@ -19,7 +19,10 @@
 ```
 
 ## Blind OS Command Injection
-- time delays : ```x||ping+-c+10+127.0.0.1||```
+- Time delays : ```x||ping+-c+10+127.0.0.1||```
+- Output redirection : ``````
+- Out-of-band interaction : ``````
+- Out-of-band data exfilteration : ``````
 
 # Code Execution
 
