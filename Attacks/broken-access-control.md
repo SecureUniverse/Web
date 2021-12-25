@@ -23,7 +23,7 @@ Request changes to delete a user
 ```
 Referer: https://ac411f7d1e08efc5c09c31d3007100f6.web-security-academy.net/admin
 ```
-- س
+- پس از تغییر username (یا باقی موارد ذکر شده) درخواست را از POST به GET تغییر داده و ارسال می کنیم.
 
 ## GHDB
   - site:ir inurl:editform.aspx
