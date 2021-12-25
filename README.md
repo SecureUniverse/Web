@@ -9,7 +9,6 @@
 ## Attacks
 - [File Upload](Attacks/file-upload.md)
 - [SSRF](Attacks/ssrf.md)
-- [IDOR](Attacks/idor.md)
 - [Open Rediect](Attacks/open-redirect.md)
 - [LFI (Directory Traversal)](Attacks/lfi.md)
 - [RFI](Attacks/rfi.md)
