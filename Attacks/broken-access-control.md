@@ -6,11 +6,11 @@
 - درون کوکی هایی که از سمت سرور تنظیم می شود، به دنبال مقادیری مانند admin=false می گردیم و آن را به true تغییر می دهیم تا به صفحاتی مانند adminpanel دسترسی یابیم
 - هدر ```X-Original-URL: /invalid``` را به درخواست اضافه می کنیم، اگر خطای Not found بدهد یعنی این مقدار در سمت سرور پردازش می گردد. با افزودن این هدر می توانیم به صفحات و متدهایی که نیاز به دسترسی ادمین دارند، دسترسی یابیم
 ```HTML
-Source code : 
-=> <a href="/admin/delete?username=carlos">Delete</a>
-Request change to delete a user : 
-=> GET /?username=carlos HTTP/1.1
-=> X-Original-URL: /admin/delete
+Source code
+   => <a href="/admin/delete?username=carlos">Delete</a>
+Request change to delete a user
+   => GET /?username=carlos HTTP/1.1
+   => X-Original-URL: /admin/delete
 ```
 - س
 
