@@ -19,7 +19,7 @@ Request changes to delete a user
   - اگر پس از تغییر نام کاربری redirect شدیم، باید response را به Burp ببریم تا وجود data leakage را بررسی کنیم (مثلا ممکن است API key کاربر قربانی نمایش داده شود) 
 - نام فایل هایی که دانلود می شود باید بررسی گردد، تا امکان دانلود فایل های دیگر که در حالت عادی دسترسی نداریم، بررسی شود (IDOR)
   - همچنین می توانیم اعداد درون URL را تغییر دهیم، تا به منابع غیر مجاز دسترسی پیدا کنیم
-- اگر URL مربوط به تغییر role کاربر را یافتیم ```/admin-roles?username=carlos&action=upgrade``` ممکن است که Referer هم در سمت سرور چک شود که باید به صورت زیر در Request ارسالی تغییر داده شود:
+- اگر URL مربوط به تغییر role کاربر را یافتیم ```admin-roles?username=carlos&action=upgrade``` ممکن است که Referer هم در سمت سرور چک شود که باید به صورت زیر در Request ارسالی تغییر داده شود:
 ```
 Referer: https://ac411f7d1e08efc5c09c31d3007100f6.web-security-academy.net/admin
 ```
