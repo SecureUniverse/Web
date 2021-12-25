@@ -8,7 +8,7 @@
 ```HTML
 Source code
    => <a href="/admin/delete?username=carlos">Delete</a>
-Request change to delete a user
+Request changes to delete a user
    => GET /?username=carlos HTTP/1.1
    => X-Original-URL: /admin/delete
 ```
