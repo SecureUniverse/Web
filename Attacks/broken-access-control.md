@@ -14,7 +14,7 @@ Request changes to delete a user
    => GET /?username=carlos HTTP/1.1
    => X-Original-URL: /admin/delete
 ```
-- س
+- پس از لاگین به حساب کاربری خودمان، با رفتن به صفحه حساب کاربری، بررسی می کنیم که username درون request ارسالی و یا URL وجود دارد یا خیر، اگر بود، تغییر می دهیم تا بررسی کنیم که آیا horizontal privilege escalation رخ می دهد
 
 ## GHDB
   - site:ir inurl:editform.aspx
