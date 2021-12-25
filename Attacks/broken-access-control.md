@@ -1,5 +1,9 @@
 # Broken Access Control
 
+## Concept
+- باید robots.txt را برای وجود مسیرهایی که ممکن است روی آن ها Authentication وجود نداشته باشد، بررسی کنیم
+- 
+
 ## GHDB
   - site:ir inurl:editform.aspx
   - site:ir inurl:editprofile.php
