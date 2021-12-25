@@ -7,7 +7,7 @@
 - هدر ```X-Original-URL: /invalid``` را به درخواست اضافه می کنیم، اگر خطای Not found بدهد یعنی این مقدار در سمت سرور پردازش می گردد. با افزودن این هدر می توانیم به صفحات و متدهایی که نیاز به دسترسی ادمین دارند، دسترسی یابیم
 ```HTML
 <a href="/admin/delete?username=carlos">Delete</a>
-از بالایی به پایینی می رسیم
+لینک بالایی در source code مشاهده شده است، تغییرات زیر را در request ارسالی ارسال می کنیم تا کاربر حذف شود
 GET /?username=carlos HTTP/1.1
 X-Original-URL: /admin/delete
 ```
