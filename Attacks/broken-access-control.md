@@ -1,4 +1,4 @@
-# Missing Functional Level Access Control
+# Broken Access Control
 
 ## GHDB
   - site:ir inurl:editform.aspx
