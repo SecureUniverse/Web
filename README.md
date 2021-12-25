@@ -27,7 +27,7 @@
 - [SQL Injection](Attacks/sql-injection.md)
 - [HTML Injection](Attacks/html-injection.md)
 - [LDAP Injection](Attacks/ldap-injection.md)
-- [Broken Access Control](Attacks/missing-functional-level-access-control.md)
+- [Broken Access Control](Attacks/broken-access-control.md)
 - [Cryptography](Attacks/cryptography.md)
 
 ## Fix
