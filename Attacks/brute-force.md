@@ -1,5 +1,15 @@
 # Brute Force
 
+## Exploit
+- بررسی می کنیم که پیغام خطای نام کاربری اشتباه و پسورد یکسان یکسان می باشد یا خیر
+- برای یافتن user/pass درست از موارد زیر استفاده می کنیم
+  - کد پاسخ redirect مانند 302
+  - بخش Grep-Match که به دنبال یک string درون پاسخ می گردد
+  - بخش Grep-Extract که response را fetch کرده و همان جا می توانیم بخشی که می خواهیم را هایلایت کنیم
+    - ممکن است این تفاوت جزئی باشد، مثلا در یک نقطه انتهای عبارت invalid username and password. برای بررسی این حالت از بخش Grep-Extract استفاده می  کنیم و با زدن Add، بخش خطای صادر شده را هایلات کرده و درون Warning ها به دنبال تفاوت می گردیم
+
+
+
 ## Burp
 - Send request to Intruder
 - Decode user/pass in the request
