@@ -14,7 +14,7 @@
   - [RFI (Open Redirect)](Attacks/rfi.md)
   - [RCE](Attacks/rce.md)
   - [Business Logic](Attacks/business-logic.md)
-  - information disclosure
+  - [Information Disclosure](Attacks/information-disclosure.md)
   - [Broken Access Control](Attacks/broken-access-control.md)
   - [File Upload](Attacks/file-upload.md)
   - [SSRF](Attacks/ssrf.md)
