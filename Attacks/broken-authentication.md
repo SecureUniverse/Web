@@ -38,9 +38,9 @@
   - یک درخواست به مسیر ```admin/``` ارسال می کنیم
   - از طریق تغییر متد به ```TRACE``` وجود هدرهای دیگر را بررسی می کنیم
   - به مسیر Proxy > Options رفته و و در بخش Match and Replace تنظیمات زیر را اعمال می کنیم:
-    - Type: Request header
-    - Match: خالی
-    - Replace: X-Custom-IP-Authorization: 127.0.0.1 
+    - <div align="right">Type: Request header</p>
+    - <div align="right">Match: خالی</p>
+    - <div align="right">Replace: X-Custom-IP-Authorization: 127.0.0.1 </p>
 - ی
 
 
