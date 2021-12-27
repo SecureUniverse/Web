@@ -3,24 +3,22 @@
 ## Concept
 - با تغییر نام فایل آپلود شده در Burp می توانیم حملات XSS و RCE انجام دهیم
 
-## Exploitation
+## Exploit
 - آپلود شل PHP
   - برای عکس پروفایل، فایل *test.php* را با محتوای زیر را آپلود می کنیم
   - آدرس عکس آواتار را وارد می کنیم تا نتیجه اجرای کد PHP نمایش داده شود
 ```
 <?php echo file_get_contents('/home/carlos/secret'); ?>
 ```
-- س
 
 ## Bypass
 - Content type
-  - ```application/octet-stream``` => ```Content-Type: image/jpeg```
+  - ```application/octet-stream``` => ```image/jpeg```
 - Black list
-  - Apache web server is case sensetive
-    - ```.php``` => ```.PhP```  
+  - Apache web server is case sensetive : ```.php``` => ```.PhP```  
   - modify htaccess (SEC542 - 7) 
 - Double Extension
-  - *wp.php* => *wp.php.gif* 
+  - ```wp.php``` => ```wp.php.gif```
 
 ## Mitigation
 - Never allow users to upload executable
