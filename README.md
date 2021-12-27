@@ -7,7 +7,8 @@
 - [Scan](Attacks/scan.md)
 
 ## Attacks
-- Server Side
+
+- **Server Side**
   - [SQL Injection](Attacks/sql-injection.md)
   - [Broken Authentication](Attacks/broken-authentication.md)
   - [LFI (Directory Traversal)](Attacks/lfi.md)
@@ -19,7 +20,8 @@
   - [File Upload](Attacks/file-upload.md)
   - [SSRF](Attacks/ssrf.md)
   - [XXE](Attacks/xxe.md)
-- Client Side
+
+- **Client Side**
   - [XSS](Attacks/xss.md)  
   - [CSRF](Attacks/csrf.md)
   - CORS
@@ -28,9 +30,11 @@
   - [API](Attacks/api.md)
   - Insecure deserialization
   - [Client Side](Attacks/client-side.md)  ???
-- Advanced
+
+- **Advanced**
   - ??? 
-- Other 
+
+- **Other**
   - [Session Management](Attacks/session-management.md)
   - [Vulnerable Components](Attacks/vulnerable-components.md)
   - [HTML Injection](Attacks/html-injection.md)
