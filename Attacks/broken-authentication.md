@@ -37,7 +37,7 @@
 - دسترسی برخی مسیرها محدود به آدرس های local باشد
   - یک درخواست به مسیر ```admin/``` ارسال می کنیم
   - از طریق تغییر متد به ```TRACE``` وجود هدرهای دیگر در Response را بررسی می کنیم
-  - به مسیر Proxy > Options رفته و و در بخش Match and Replace تنظیمات زیر را اعمال می کنیم:
+  - به مسیر Proxy > Options رفته و و در بخش Match and Replace تنظیمات زیر را اعمال می کنیم تا هدر ```X-Custom-IP-Authorization``` به تمامی درخواست ها اضافه شود.:
     - <div align="left">Type: Request header</p>
     - <div align="left">Match: خالی</p>
     - <div align="left">Replace: X-Custom-IP-Authorization: 127.0.0.1</p>
