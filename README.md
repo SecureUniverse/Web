@@ -11,8 +11,7 @@
   - [SQL Injection](Attacks/sql-injection.md)
   - [Broken Authentication](Attacks/broken-authentication.md)
   - [LFI (Directory Traversal)](Attacks/lfi.md)
-  - [RFI](Attacks/rfi.md)  ???
-  - [Open Rediect](Attacks/open-redirect.md)   ???
+  - [RFI (Open Redirect)](Attacks/rfi.md)  ???
   - [RCE](Attacks/rce.md)
   - [Business Logic](Attacks/business-logic.md)
   - information disclosure
