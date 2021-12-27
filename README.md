@@ -7,26 +7,36 @@
 - [Scan](Attacks/scan.md)
 
 ## Attacks
-- [File Upload](Attacks/file-upload.md)
-- [SSRF](Attacks/ssrf.md)
-- [Open Rediect](Attacks/open-redirect.md)
-- [LFI (Directory Traversal)](Attacks/lfi.md)
-- [RFI](Attacks/rfi.md)
-- [RCE](Attacks/rce.md)
-- [CSRF](Attacks/csrf.md)
-- [Broken Authentication](Attacks/broken-authentication.md)
-- [API](Attacks/api.md)
-- [Business Logic](Attacks/business-logic.md)
-- [Client Side](Attacks/client-side.md)
-- [Session Management](Attacks/session-management.md)
-- [Vulnerable Components](Attacks/vulnerable-components.md)
-- [XXE](Attacks/xxe.md)
-- [XSS](Attacks/xss.md)  
-- [SQL Injection](Attacks/sql-injection.md)
-- [HTML Injection](Attacks/html-injection.md)
-- [LDAP Injection](Attacks/ldap-injection.md)
-- [Broken Access Control](Attacks/broken-access-control.md)
-- [Cryptography](Attacks/cryptography.md)
+- Server Side
+  - [SQL Injection](Attacks/sql-injection.md)
+  - [Broken Authentication](Attacks/broken-authentication.md)
+  - [LFI (Directory Traversal)](Attacks/lfi.md)
+  - [RFI](Attacks/rfi.md)  ???
+  - [Open Rediect](Attacks/open-redirect.md)   ???
+  - [RCE](Attacks/rce.md)
+  - [Business Logic](Attacks/business-logic.md)
+  - information disclosure
+  - [Broken Access Control](Attacks/broken-access-control.md)
+  - [File Upload](Attacks/file-upload.md)
+  - [SSRF](Attacks/ssrf.md)
+  - [XXE](Attacks/xxe.md)
+- Client Side
+  - [XSS](Attacks/xss.md)  
+  - [CSRF](Attacks/csrf.md)
+  - CORS
+  - Clickjacking
+  - DOM-Based
+  - [API](Attacks/api.md)
+  - Insecure deserialization
+  - [Client Side](Attacks/client-side.md)  ???
+- Advanced
+  - ??? 
+- Other 
+  - [Session Management](Attacks/session-management.md)
+  - [Vulnerable Components](Attacks/vulnerable-components.md)
+  - [HTML Injection](Attacks/html-injection.md)
+  - [LDAP Injection](Attacks/ldap-injection.md)
+  - [Cryptography](Attacks/cryptography.md)
 
 ## Fix
 - [Apache](Fix/Apache.pdf)
