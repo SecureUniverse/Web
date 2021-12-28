@@ -1,7 +1,7 @@
 # API
 
 ## Concept
-- ```Content-type: application/json```
+- در API ها Content-type به صورت application/json می باشد.
 
 ## Web service attack types
 - SQL Injection
