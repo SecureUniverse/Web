@@ -27,7 +27,7 @@
   - [CORS](Attacks/cors.md)
   - [Clickjacking](Attacks/clickjacking.md)
   - DOM-Based
-  - [API](Attacks/api.md)
+  - [WebSockets](Attacks/web-socket.md)
   - Insecure deserialization
   - [Client Side](Attacks/client-side.md)  ???
 
@@ -40,6 +40,7 @@
   - [HTML Injection](Attacks/html-injection.md)
   - [LDAP Injection](Attacks/ldap-injection.md)
   - [Cryptography](Attacks/cryptography.md)
+  - [API](Attacks/api.md)
 
 ## Fix
 - [Apache](Fix/Apache.pdf)
