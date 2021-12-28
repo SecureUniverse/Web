@@ -25,7 +25,7 @@
   - [XSS](Attacks/xss.md)  
   - [CSRF](Attacks/csrf.md)
   - CORS
-  - Clickjacking
+  - [Clickjacking](Attacks/clickjacking.md)
   - DOM-Based
   - [API](Attacks/api.md)
   - Insecure deserialization
