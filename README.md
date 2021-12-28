@@ -24,7 +24,7 @@
 - **Client Side**
   - [XSS](Attacks/xss.md)  
   - [CSRF](Attacks/csrf.md)
-  - CORS
+  - [CORS](Attacks/cors.md)
   - [Clickjacking](Attacks/clickjacking.md)
   - DOM-Based
   - [API](Attacks/api.md)
