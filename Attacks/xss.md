@@ -22,7 +22,7 @@
     - می خواهیم با کلیک روی کلید ```Back``` کوکی قربانی نمایش داده شود.
     - طبق کدهای زیر، پارامتر ```returnPath``` از URL خوانده شده و در href عه لینکی که به Back اشاره می کند، قرار داده می شود:
     - با تغییر URL و قرار دادن مقدار ```javascript:alert(document.cookie``` برای پارامتر returnPath، با کلیک بر روی *Back*، کوکی کاربر نمایش داده می شود. 
-```
+```JavaScript
 Back link : <a id="backLink">Back</a>
 Source : $('#backLink').attr("href", (new URLSearchParams(window.location.search)).get('returnPath'));
 ```
