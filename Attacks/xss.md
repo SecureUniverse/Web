@@ -15,7 +15,7 @@
 - س
 
 ## Exploit (DOM-based)
-- ی
+- تابع ```location.search``` برای *source* و ``` document.write ``` برای *sink*
 ```JavaScript
 document.write('<img src="/resources/images/tracker.gif?searchTerms='+(new URLSearchParams(window.location.search)).get('search');+'">');
 ```
