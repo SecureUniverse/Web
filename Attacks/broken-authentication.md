@@ -16,7 +16,7 @@
     - درون response ها به دنبال طول بیشتر که نشان دهنده پیام خطای متفاوت است می گردیم تا ببینیم کدام نام کاربری بلاک شده است
 - **حمله Brute Force روی کوکی Stay logged in**
   - مقدار کوکی *stay-logged-in* را بررسی می کنیم، در این مثال به صورت ```Base64{username:MD5{password}}``` می باشد
-  - درخواست صفحه ```my-account/``` را به Intruder برده و لیست password ها را برای Brute forceمی دهیم.
+  - درخواست صفحه ```my-account/``` را به Intruder برده و لیست password ها را برای Brute force می دهیم.
   - در بخش *Payload processing* تنظیمات زیر را اعمال می کنیم:
     - <div align="left">Hash: MD5</p>
     - <div align="left">Add prefix: carlos:</p>
