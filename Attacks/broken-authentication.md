@@ -26,6 +26,12 @@
   - با انتخاب *Forgot password?* یک ایمیل حاوی لینک ریست رمز عبور دریافت می کنیم که حاوی یک token می باشد
   - اگر token سمت سرور چک نشود، می توانیم token را از URL به طور کامل حذف کرده و در Request Body هم فقط value آن را حذف کنیم 
   - حال با تغییر username و ارسال درخواست، پسورد قربانی تغییر می کند.
+- **حمله Brute Force روی Password Change** 
+  - درخواست تغییر رمز عبور را به Intruder برده و بخش username را تغییر می دهیم.
+  - اگر current password را اشتباه بزنیم، حساب کاربری قفل می شود، و لی اگر فیلدهای password و confirm password یکسان نباشد، دو خطای زیر را خواهیم داشت و حساب کاربری قفل نخواهد شد:
+    - غلط بودن رمز عبور : Current password is incorrect 
+    - درست بودن رمز عبور : New passwords do not match
+  - همین تفاوت را به Grep-Match برده و Brute force می زنیم   
 
 ## Exploit (Two-Factor Authentication)
 - **بررسی flow تغییر URI**
