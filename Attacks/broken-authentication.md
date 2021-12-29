@@ -17,10 +17,10 @@
 - **حمله Brute Force روی کوکی Stay logged in**
   - مقدار کوکی *stay-logged-in* را بررسی می کنیم، در این مثال به صورت ```Base64{username:MD5{password}}``` می باشد
   - درخواست صفحه *my-account/* را به Intruder برده و لیست password ها را برای Brute forceمی دهیم.
-  - در بخش ** تنظیمات زیر را اعمال می کنیم:
-    - <div align="left"></p>
-    - <div align="left"></p>
-    - <div align="left"></p> 
+  - در بخش *Payload processing* تنظیمات زیر را اعمال می کنیم:
+    - <div align="left">Hash: MD5</p>
+    - <div align="left">Add prefix: carlos:</p>
+    - <div align="left">Encode: Base64-encode</p> 
   - اگر بتوانیم لاگین شویم، کلید *Update Email* نمایش داده می شود، پس در بخش Grep-Match این عبارت را وارد می کنیم تا رمز عبور درست را بیابیم.
 
 ## Exploit (Two-Factor Authentication)
