@@ -15,14 +15,14 @@
 - س
 
 ## Exploit (DOM-based)
-- تابع ```location.search``` برای *source* و استفاده از ```innerHTML``` برای *sink*
+- تابع ```location.search``` برای *source* و ```innerHTML``` برای *sink*
   - در اینحالت محتوای search شده درون صفحه نمایش داده می شود، که باید از تگ img برای تزریق payload استفاده می کنیم.
 ```
 0 search results for '<span id="searchMessage"></span>'
 ...
 document.getElementById('searchMessage').innerHTML = (new URLSearchParams(window.location.search)).get('search')
 ``` 
-- تابع ```location.search``` برای **source** و ```jQuery anchor href attribute``` برای **sink**
+- تابع ```location.search``` برای *source* و ```jQuery anchor href attribute``` برای *sink*
   - می خواهیم با کلیک روی کلید ```Back``` کوکی قربانی نمایش داده شود.
   - طبق کدهای زیر، پارامتر ```returnPath``` از URL خوانده شده و در href عه لینکی که به Back اشاره می کند، قرار داده می شود:
   - با تغییر URL و قرار دادن مقدار ```javascript:alert(document.cookie)``` برای پارامتر returnPath، با کلیک بر روی *Back*، کوکی کاربر نمایش داده می شود. 
