@@ -1,7 +1,7 @@
 # XSS
 
 ## Exploit (Reflected & Stored)
-- تزریق کد به محتوای صفحه HTML بدون هیچ encoding
+- تزریق کد به محتوای صفحه HTML بدون هیچ Encoding
   - ورودی های سایت مانند Search و Comment و ... 
   - پس از تزریق اسکریپت باید به page source code رفته و بررسی کنیم که با چه کاراکترهایی می توانیم از المانی که حاوی اسکریپت ما می باشد، breake out کنیم. چند نمونه در زیر آمده است:
 ```Javascript
