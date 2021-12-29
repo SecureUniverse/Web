@@ -18,6 +18,15 @@
 - Sink: ```document.write``` & Source : ```location.search```
 - Sink: ```document.write``` & Source : ```location.search```
 - Sink: ```innerHTML``` & Source : ```location.search```
+- Sink: jQuery anchor href attribute & Source : ```location.search```
+  - می خواهیم با کلیک روی کلید ```Back``` کوکی قربانی نمایش داده شود.
+  - طبق کدهای زیر، پارامتر ```returnPath``` از URL خوانده شده و در href عه لینکی که به Back اشاره می کند، قرار داده می شود:
+```
+Back link : <a id="backLink">Back</a>
+
+Source : $('#backLink').attr("href", (new URLSearchParams(window.location.search)).get('returnPath'));
+```
+- d  
 
 ## Payloads
 ```Javascript
