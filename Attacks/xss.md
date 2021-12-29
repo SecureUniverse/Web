@@ -15,8 +15,7 @@
 - س
 
 ## Exploit (DOM-based)
-- استفاده از  برای sinkو تابع ```location.search``` برای  source 
-- استفاده از ```innerHTML``` برای **sink  
+- تابع ```location.search``` برای *source* و استفاده از ```innerHTML``` برای *sink*
   - در اینحالت محتوای search شده درون صفحه نمایش داده می شود، که باید از تگ img برای تزریق payload استفاده می کنیم.
 ```
 0 search results for '<span id="searchMessage"></span>'
