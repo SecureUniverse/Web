@@ -62,7 +62,6 @@ $(window).on('hashchange', function(){
 <img src=1 onerror=alert(888)>
 <img src=1 oNeRrOr=alert`888`>
 
-
 <BODY ONLOAD=alert(888)>
 ```
 
