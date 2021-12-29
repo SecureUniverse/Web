@@ -17,7 +17,7 @@
 ## Exploit (DOM-based)
 - تابع ```location.search``` برای *source* و ```innerHTML``` برای *sink*
   - در اینحالت محتوای search شده، درون صفحه نمایش داده می شود، که باید از تگ img برای تزریق payload استفاده می کنیم.
-```
+```JavaScript
 0 search results for '<span id="searchMessage"></span>'
 ...
 document.getElementById('searchMessage').innerHTML = (new URLSearchParams(window.location.search)).get('search')
