@@ -14,6 +14,14 @@
     - درخواست لاگین را به Intruder برده و از حمله نوع Cluster Bomb استفاده می کنیم
     - لیست کاربران را به username می دهیم و برای password از ```$$test``` و نوع payload برابر Null payloads استفاده کرده و تعداد آن را روی 5 قرار می دهیم
     - درون response ها به دنبال طول بیشتر که نشان دهنده پیام خطای متفاوت است می گردیم تا ببینیم کدام نام کاربری بلاک شده است
+- **حمله Brute Force روی کوکی Stay logged in**
+  - مقدار کوکی *stay-logged-in* را بررسی می کنیم، در این مثال به صورت ```Base64{username:MD5{password}}``` می باشد
+  - درخواست صفحه *my-account/* را به Intruder برده و لیست password ها را برای Brute forceمی دهیم.
+  - در بخش ** تنظیمات زیر را اعمال می کنیم:
+    - <div align="left"></p>
+    - <div align="left"></p>
+    - <div align="left"></p> 
+  - اگر بتوانیم لاگین شویم، کلید *Update Email* نمایش داده می شود، پس در بخش Grep-Match این عبارت را وارد می کنیم تا رمز عبور درست را بیابیم.
 
 ## Exploit (Two-Factor Authentication)
 - **بررسی flow تغییر URI**
