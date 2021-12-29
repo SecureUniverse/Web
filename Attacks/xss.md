@@ -1,9 +1,5 @@
 # XSS
 
-## Concept
-- اسکریپت مقدماتی به صورت `````` است.
-
-
 ## Exploit (Reflected & Stored)
 - تزریق کد به محتوای صفحه HTML بدون هیچ encoding
   - ورودی های سایت مانند Search و Comment و ... 
